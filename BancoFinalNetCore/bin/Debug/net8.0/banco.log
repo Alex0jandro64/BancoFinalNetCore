@@ -1,0 +1,80 @@
+08/02/2024 02:22:33 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:22:51 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:23:05 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:23:10 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:23:45 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+08/02/2024 02:23:45 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:23:46 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:23:46 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:23:46 [INFO] Entrando en el método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:23:46 [INFO] Saliendo del método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:23:46 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:23:46 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:23:46 [Error UsuarioServicioImpl - registrarUsuario()] Error de persistencia al actualizar la bbdd: An error occurred while saving the entity changes. See the inner exception for details.
+08/02/2024 02:23:46 [ERROR] Se lanzó una excepción en el método RegistrarPost() de la clase  RegistroController: Object reference not set to an instance of an object.   at BancoFinalNetCore.Controllers.RegistroController.RegistrarPost(UsuarioDTO usuarioDTO) in C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\Controllers\RegistroController.cs:line 52
+08/02/2024 02:25:06 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+08/02/2024 02:25:06 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:25:07 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:25:07 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:25:07 [INFO] Entrando en el método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:25:07 [INFO] Saliendo del método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:25:07 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:25:07 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:25:07 [INFO] Entrando en el método enviarEmailConfirmacion() de la clase ServicioEmailImpl
+08/02/2024 02:25:07 [Error ServicioEmailImpl - enviarEmailConfirmacion()] Error al leer el fichero html para enviar email de confirmacion: Could not find a part of the path 'C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\Plantilla\ConfirmarCorreo.html'.
+08/02/2024 02:25:07 [INFO] Saliendo del método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:25:07 [INFO] Saliendo del método RegistrarGet() de la clase RegistroController. Registro del nuevo usuario OK
+08/02/2024 02:25:11 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+08/02/2024 02:25:11 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:25:11 [INFO] Saliendo del método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:25:11 [INFO] Saliendo del método RegistrarGet() de la clase RegistroController. Ya existe un usuario registrado con ese email pero con la cuenta sin verificar
+08/02/2024 02:25:17 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:25:20 [INFO] Entrando en el método Login() de la clase LoginController
+08/02/2024 02:25:25 [INFO] Entrando en el método Login() de la clase LoginController
+08/02/2024 02:25:27 [INFO] Entrando en el método Login() de la clase LoginController
+08/02/2024 02:25:32 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:25:42 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+08/02/2024 02:25:42 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:25:42 [INFO] Saliendo del método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:25:42 [INFO] Saliendo del método RegistrarGet() de la clase RegistroController. Ya existe un usuario registrado con ese email pero con la cuenta sin verificar
+08/02/2024 02:34:46 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+08/02/2024 02:34:46 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:34:46 [INFO] Saliendo del método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:34:46 [INFO] Saliendo del método RegistrarGet() de la clase RegistroController. Ya existe un usuario registrado con ese email pero con la cuenta sin verificar
+08/02/2024 02:35:26 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:35:40 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+08/02/2024 02:35:40 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:35:40 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:35:40 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:35:40 [INFO] Entrando en el método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:35:40 [INFO] Saliendo del método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:35:40 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:35:40 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:35:41 [INFO] Entrando en el método enviarEmailConfirmacion() de la clase ServicioEmailImpl
+08/02/2024 02:35:41 [Error ServicioEmailImpl - enviarEmailConfirmacion()] Error al leer el fichero html para enviar email de confirmacion: Could not find a part of the path 'C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\Plantilla\ConfirmarCorreo.html'.
+08/02/2024 02:35:41 [INFO] Saliendo del método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:35:41 [INFO] Saliendo del método RegistrarGet() de la clase RegistroController. Registro del nuevo usuario OK
+08/02/2024 02:37:30 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:37:47 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+08/02/2024 02:37:47 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:37:48 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:37:48 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:37:48 [INFO] Entrando en el método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:37:48 [INFO] Saliendo del método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:37:48 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:37:48 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:38:14 [INFO] Entrando en el método enviarEmailConfirmacion() de la clase ServicioEmailImpl
+08/02/2024 02:39:48 [Error ServicioEmailImpl - enviarEmailConfirmacion()] Error al leer el fichero html para enviar email de confirmacion: Could not find a part of the path 'C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\Plantilla\ConfirmarCorreo.html'.
+08/02/2024 02:39:48 [INFO] Saliendo del método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:39:50 [INFO] Saliendo del método RegistrarGet() de la clase RegistroController. Registro del nuevo usuario OK
+08/02/2024 02:39:57 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:39:59 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+08/02/2024 02:40:12 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+08/02/2024 02:40:12 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+08/02/2024 02:40:12 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:40:12 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+08/02/2024 02:40:12 [INFO] Entrando en el método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:40:12 [INFO] Saliendo del método usuarioToDao() de la clase ConvertirAdaoImpl
+08/02/2024 02:40:12 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:40:12 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+08/02/2024 02:40:14 [INFO] Entrando en el método enviarEmailConfirmacion() de la clase ServicioEmailImpl
