@@ -27,3 +27,4 @@ C:\Users\Alex\Desktop\BancoFinalNetCore\DAL\obj\Debug\net8.0\refint\DAL.dll
 C:\Users\Alex\Desktop\BancoFinalNetCore\DAL\obj\Debug\net8.0\DAL.pdb
 C:\Users\Alex\Desktop\BancoFinalNetCore\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 C:\Users\Alex\Desktop\BancoFinalNetCore\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Puesto17\Desktop\BancoFinalNetCore\DAL\obj\Debug\net8.0\DAL.sourcelink.json

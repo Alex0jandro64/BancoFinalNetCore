@@ -17,13 +17,15 @@ namespace BancoFinalNetCore.Servicios
         private readonly IConvertirAdao _convertirAdao;
         private readonly IConvertirAdto _convertirAdto;
         private readonly IServicioEmail _servicioEmail;
+        private readonly ICuentaServicio _servicioCuenta;
 
         public UsuarioServicioImpl(
             MyDbContext contexto,
             IServicioEncriptar servicioEncriptar,
             IConvertirAdao convertirAdao,
             IConvertirAdto convertirAdto,
-            IServicioEmail servicioEmail
+            IServicioEmail servicioEmail,
+            ICuentaServicio servicioCuenta
         )
         {
             _contexto = contexto;
@@ -31,6 +33,7 @@ namespace BancoFinalNetCore.Servicios
             _convertirAdao = convertirAdao;
             _convertirAdto = convertirAdto;
             _servicioEmail = servicioEmail;
+            _servicioCuenta = servicioCuenta;
         }
         public UsuarioDTO registrarUsuario(UsuarioDTO userDTO)
         {
@@ -60,10 +63,12 @@ namespace BancoFinalNetCore.Servicios
                 Usuario usuarioDao = _convertirAdao.usuarioToDao(userDTO);
                 usuarioDao.FchAltaUsuario = DateTime.Now;
                 usuarioDao.Rol = "ROLE_USER";
+                
                 string token = generarToken();
                 usuarioDao.Token = token;
-
+                CuentaBancaria cuentaNueva = _servicioCuenta.GenerarCuentaBancaria(usuarioDao);
                 _contexto.Usuarios.Add(usuarioDao);
+                _contexto.CuentasBancarias.Add(cuentaNueva);
                 _contexto.SaveChanges();
 
                 string nombreUsuario = usuarioDao.NombreUsuario;
@@ -292,7 +297,9 @@ namespace BancoFinalNetCore.Servicios
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl");
 
                 UsuarioDTO usuarioDTO = new UsuarioDTO();
-                var usuario = _contexto.Usuarios.FirstOrDefault(u => u.EmailUsuario == email);
+                var usuario = _contexto.Usuarios
+                        .Include(u => u.CuentasBancarias)
+                        .FirstOrDefault(u => u.EmailUsuario == email);
 
                 if (usuario != null)
                 {

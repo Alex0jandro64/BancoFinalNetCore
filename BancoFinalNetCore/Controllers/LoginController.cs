@@ -74,7 +74,7 @@ namespace BancoFinalNetCore.Controllers
                     HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identidadDeReclamaciones));
 
                     EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController");
-                    return RedirectToAction("Dashboard", "Login");
+                    return RedirectToAction("Home", "MenuPrincipal");
                 }
                 else
                 {
@@ -124,14 +124,7 @@ namespace BancoFinalNetCore.Controllers
             }
         }
 
-        [Authorize]
-        [HttpGet]
-        [Route("/privada/dashboard")]
-        public IActionResult Dashboard()
-        {
-            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método Dashboard() de la clase LoginController");
-            return View("~/Views/Home/dashboard.cshtml");
-        }
+        
 
         [HttpPost]
         public IActionResult CerrarSesion()

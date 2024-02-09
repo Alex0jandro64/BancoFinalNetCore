@@ -8,5 +8,6 @@ namespace BancoFinalNetCore.Servicios
         public UsuarioDTO usuarioToDto(Usuario u);
 
         public List<UsuarioDTO> listaUsuarioToDto(List<Usuario> listaUsuario);
+        public List<CuentaBancariaDTO> listaCuentaToDto(List<CuentaBancaria> listaCuenta);
     }
 }

@@ -493,3 +493,4 @@ C:\Users\Alex\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\refin
 C:\Users\Alex\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFinalNetCore.pdb
 C:\Users\Alex\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFinalNetCore.genruntimeconfig.cache
 C:\Users\Alex\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\ref\BancoFinalNetCore.dll
+C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFinalNetCore.sourcelink.json

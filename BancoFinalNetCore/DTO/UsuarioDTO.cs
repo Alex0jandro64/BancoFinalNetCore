@@ -1,4 +1,6 @@
-﻿namespace BancoFinalNetCore.DTO
+﻿using DAL.Entidades;
+
+namespace BancoFinalNetCore.DTO
 {
     public class UsuarioDTO
     {
@@ -17,7 +19,7 @@
         public string Rol { get; set; }
         public bool? MailConfirmado { get; set; }
         public byte[] FotoPerfil { get; set; }
-        public List<CuentaBancariaDTO> CuentasBancarias { get; set; }
-        public List<CitaDTO> CitasUsuario { get; set; }
+        public List<CuentaBancaria> CuentasBancarias { get; set; }
+        public List<Cita> CitasUsuario { get; set; }
     }
 }
