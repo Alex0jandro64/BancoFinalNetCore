@@ -60,7 +60,7 @@ namespace BancoFinalNetCore.Servicios
 
                 string urlDominio = "https://localhost:7064";
 
-                string EmailOrigen = "alejadroalcerreca3@gmail.com";
+                string EmailOrigen = "alejandroalcerreca3@gmail.com";
                 //Se crea la URL de recuperación con el token que se enviará al mail del user.
                 string urlDeRecuperacion = String.Format("{0}/auth/recuperar/?token={1}", urlDominio, token);
 
@@ -71,7 +71,7 @@ namespace BancoFinalNetCore.Servicios
                 //Asignamos el nombre de usuario que tendrá el cuerpo del mail y el URL de recuperación con el token al HTML.
                 htmlContent = String.Format(htmlContent, nombreUsuario, urlDeRecuperacion);
 
-                MailMessage mensajeDelCorreo = new MailMessage(EmailOrigen, emailDestino, "RESTABLECER CONTRASEÑA AlceBank", htmlContent);
+                MailMessage mensajeDelCorreo = new MailMessage(EmailOrigen, emailDestino, "RECUPERAR CONTRASEÑA AlceBank", htmlContent);
 
                 mensajeDelCorreo.IsBodyHtml = true;
 

@@ -22531,3 +22531,606 @@
 09/02/2024 02:26:14 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
 09/02/2024 02:26:14 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
 09/02/2024 02:26:14 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 12:47:28 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:47:32 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 12:47:32 [INFO] Entrando en el método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 12:47:32 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 12:47:32 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 12:47:33 [INFO] Saliendo del método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 12:47:33 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 12:47:33 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 12:47:33 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 12:47:33 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 12:47:33 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 12:47:33 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 12:47:34 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 12:47:34 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 12:47:34 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 12:47:34 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 12:47:34 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 12:47:34 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 12:47:34 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 12:47:34 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 12:47:34 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 12:47:41 [INFO] Entrando en el método CerrarSesion() de la clase LoginController
+12/02/2024 12:47:43 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:47:47 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:47:48 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+12/02/2024 12:47:50 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:47:55 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+12/02/2024 12:47:56 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:47:59 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:49:14 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+12/02/2024 12:49:16 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:49:19 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:49:20 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 12:59:48 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:02:46 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:02:48 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:03:44 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:03:49 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:03:49 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:03:51 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:03:53 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:03:53 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:03:54 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:03:54 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:03:54 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:03:54 [Error ServicioEmailImpl - enviarEmailRecuperacion()] Error al leer el fichero html para enviar email de recuperacion: Could not find file 'C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\Plantilla\RecuperacionContraseña.html'.
+12/02/2024 01:03:54 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl.
+12/02/2024 01:03:54 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+12/02/2024 01:06:07 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:06:08 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:06:22 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:06:28 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:06:30 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:06:30 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:06:30 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:06:30 [Error ServicioEmailImpl - enviarEmailRecuperacion()] Error al leer el fichero html para enviar email de recuperacion: Could not find file 'C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\Plantilla\RecuperacionContraseña.html'.
+12/02/2024 01:06:30 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl.
+12/02/2024 01:06:52 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+12/02/2024 01:06:58 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:07:02 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:07:09 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:07:26 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:07:26 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:07:59 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:09:51 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:09:52 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:09:53 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:09:53 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:09:54 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:09:54 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:09:54 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:09:55 [Error ServicioEmailImpl - enviarEmailRecuperacion()] Error con el protocolo de envio de email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+12/02/2024 01:09:55 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl.
+12/02/2024 01:09:55 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+12/02/2024 01:10:36 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:10:37 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:10:43 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:10:50 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:10:55 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:10:55 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:11:04 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:22:28 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:22:29 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:22:31 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:22:31 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:22:32 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:22:32 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:22:33 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:22:33 [Error ServicioEmailImpl - enviarEmailRecuperacion()] Error con el protocolo de envio de email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+12/02/2024 01:22:33 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl.
+12/02/2024 01:22:33 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+12/02/2024 01:26:01 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:26:03 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:26:05 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:26:05 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:26:06 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:26:06 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:26:07 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:26:07 [Error ServicioEmailImpl - enviarEmailRecuperacion()] Error con el protocolo de envio de email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+12/02/2024 01:26:07 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl.
+12/02/2024 01:26:07 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+12/02/2024 01:26:44 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:26:45 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:26:47 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:26:47 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:26:48 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:26:48 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:26:48 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:30:13 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+12/02/2024 01:33:00 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+12/02/2024 01:33:15 [INFO] Entrando en el método RegistrarPost() de la clase RegistroController
+12/02/2024 01:33:15 [INFO] Entrando en el método registrarUsuario() de la clase UsuarioServicioImpl
+12/02/2024 01:33:16 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:33:16 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:33:16 [INFO] Entrando en el método usuarioToDao() de la clase ConvertirAdaoImpl
+12/02/2024 01:33:16 [INFO] Saliendo del método usuarioToDao() de la clase ConvertirAdaoImpl
+12/02/2024 01:33:16 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:33:16 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:33:16 [INFO] Entrando en el método enviarEmailConfirmacion() de la clase ServicioEmailImpl
+12/02/2024 01:33:17 [INFO] Saliendo del método enviarEmailConfirmacion() de la clase ServicioEmailImpl
+12/02/2024 01:33:17 [INFO] Saliendo del método registrarUsuario() de la clase UsuarioServicioImpl
+12/02/2024 01:33:17 [INFO] Saliendo del método RegistrarGet() de la clase RegistroController. Registro del nuevo usuario OK
+12/02/2024 01:33:25 [INFO] Entrando en el método ConfirmarCuenta() de la clase LoginController
+12/02/2024 01:33:25 [INFO] Entrando en el método confirmarCuenta() de la clase UsuarioServicioImpl
+12/02/2024 01:33:25 [INFO] Saliendo del método confirmarCuenta() de la clase UsuarioServicioImpl. Cuenta confirmada OK.
+12/02/2024 01:33:25 [INFO] Saliendo del método ConfirmarCuenta() de la clase LoginController. La dirección de correo ha sido confirmada correctamente
+12/02/2024 01:34:50 [INFO] Entrando en el método ConfirmarCuenta() de la clase LoginController
+12/02/2024 01:34:50 [INFO] Entrando en el método confirmarCuenta() de la clase UsuarioServicioImpl
+12/02/2024 01:34:51 [INFO] Saliendo del método confirmarCuenta() de la clase UsuarioServicioImpl. La cuenta no existe o ya está confirmada
+12/02/2024 01:34:51 [INFO] Saliendo del método ConfirmarCuenta() de la clase LoginController. El usuario ya estaba registrado y verificado
+12/02/2024 01:34:53 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:34:55 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:34:55 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:34:55 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:34:55 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:34:55 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:34:56 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:34:56 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl.
+12/02/2024 01:34:56 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+12/02/2024 01:35:01 [INFO] Entrando en el método ConfirmarCuenta() de la clase LoginController
+12/02/2024 01:35:01 [INFO] Entrando en el método confirmarCuenta() de la clase UsuarioServicioImpl
+12/02/2024 01:35:01 [INFO] Saliendo del método confirmarCuenta() de la clase UsuarioServicioImpl. La cuenta no existe o ya está confirmada
+12/02/2024 01:35:01 [INFO] Saliendo del método ConfirmarCuenta() de la clase LoginController. El usuario ya estaba registrado y verificado
+12/02/2024 01:35:19 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:35:20 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:35:20 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:35:20 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:35:20 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:35:20 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:35:21 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:35:21 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl.
+12/02/2024 01:35:21 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+12/02/2024 01:35:26 [INFO] Entrando en el método ConfirmarCuenta() de la clase LoginController
+12/02/2024 01:35:26 [INFO] Entrando en el método confirmarCuenta() de la clase UsuarioServicioImpl
+12/02/2024 01:35:26 [INFO] Saliendo del método confirmarCuenta() de la clase UsuarioServicioImpl. La cuenta no existe o ya está confirmada
+12/02/2024 01:35:26 [INFO] Saliendo del método ConfirmarCuenta() de la clase LoginController. El usuario ya estaba registrado y verificado
+12/02/2024 01:38:07 [INFO] Entrando en el método ConfirmarCuenta() de la clase LoginController
+12/02/2024 01:38:07 [INFO] Entrando en el método confirmarCuenta() de la clase UsuarioServicioImpl
+12/02/2024 01:38:08 [INFO] Saliendo del método confirmarCuenta() de la clase UsuarioServicioImpl. La cuenta no existe o ya está confirmada
+12/02/2024 01:38:08 [INFO] Saliendo del método ConfirmarCuenta() de la clase LoginController. El usuario ya estaba registrado y verificado
+12/02/2024 01:38:09 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:38:11 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+12/02/2024 01:38:11 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl
+12/02/2024 01:38:11 [INFO] Entrando en el método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:38:11 [INFO] Saliendo del método generarToken() de la clase UsuarioServicioImpl
+12/02/2024 01:38:11 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:38:12 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+12/02/2024 01:38:12 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase UsuarioServicioImpl.
+12/02/2024 01:38:12 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+12/02/2024 01:38:15 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+12/02/2024 01:38:15 [INFO] Entrando en el método obtenerUsuarioPorToken() de la clase UsuarioServicioImpl
+12/02/2024 01:38:15 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:15 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:15 [INFO] Saliendo del método obtenerUsuarioPorToken() de la clase UsuarioServicioImpl.
+12/02/2024 01:38:15 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+12/02/2024 01:38:22 [INFO] Entrando en el método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController
+12/02/2024 01:38:22 [INFO] Entrando en el método obtenerUsuarioPorToken() de la clase UsuarioServicioImpl
+12/02/2024 01:38:22 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:22 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:22 [INFO] Saliendo del método obtenerUsuarioPorToken() de la clase UsuarioServicioImpl.
+12/02/2024 01:38:22 [INFO] Entrando en el método modificarContraseñaConToken() de la clase UsuarioServicioImpl
+12/02/2024 01:38:22 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:38:22 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:38:22 [INFO] Saliendo del método modificarContraseñaConToken() de la clase UsuarioServicioImpl.
+12/02/2024 01:38:22 [INFO] Saliendo del método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController. Contraseña modificada OK
+12/02/2024 01:38:30 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:38:30 [INFO] Entrando en el método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:38:30 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:38:30 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:38:30 [INFO] Saliendo del método verificarCredenciales() de la clase UsuarioServicioImpl. Username no encontrado
+12/02/2024 01:38:30 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+12/02/2024 01:38:36 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:38:36 [INFO] Entrando en el método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:38:36 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:38:36 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:38:36 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:38:36 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:38:36 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:38:36 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:38:36 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:36 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:36 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:38:36 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:40:05 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:05 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:05 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:05 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:05 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:40:05 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:05 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:05 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:05 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:05 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:40:08 [INFO] Entrando en el método CerrarSesion() de la clase LoginController
+12/02/2024 01:40:10 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:40:16 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:40:17 [INFO] Entrando en el método RegistrarGet() de la clase RegistroController
+12/02/2024 01:40:17 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:40:22 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:40:22 [INFO] Entrando en el método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:40:22 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:40:22 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:22 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:40:22 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:22 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:22 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:40:22 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:22 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:22 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:22 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:40:37 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:37 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:37 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:37 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:40:37 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:37 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:37 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:37 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:37 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:40:40 [INFO] Entrando en el método CerrarSesion() de la clase LoginController
+12/02/2024 01:40:41 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:40:46 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:40:46 [INFO] Entrando en el método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:40:46 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:40:46 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:46 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:40:46 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:46 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:46 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:40:46 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:46 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:46 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:46 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:40:49 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:49 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:49 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:49 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:40:49 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:40:49 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:49 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:49 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:49 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:40:49 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:43:12 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:43:12 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:12 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:12 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:43:12 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:43:12 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:12 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:12 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:12 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:12 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:43:17 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:43:18 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:18 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:18 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:43:18 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:43:18 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:18 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:18 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:18 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:18 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:43:22 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:43:22 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:22 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:22 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:43:22 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:43:22 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:22 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:22 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:22 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:43:22 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:45:39 [INFO] Entrando en el método CerrarSesion() de la clase LoginController
+12/02/2024 01:45:41 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 01:45:44 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:45:44 [INFO] Entrando en el método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:45:44 [INFO] Entrando en el método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método Encriptar() de la clase ServicioEncriptarImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método verificarCredenciales() de la clase UsuarioServicioImpl
+12/02/2024 01:45:44 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:45:44 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+12/02/2024 01:45:44 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:45:44 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:45:44 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:45:44 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:45:44 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:45:44 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:45:44 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:53:35 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:53:35 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:35 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:35 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:53:35 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:53:35 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:35 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:35 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:35 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:35 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:53:36 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:53:36 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:36 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:36 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:53:36 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:53:36 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:36 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:36 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:36 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:53:36 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:56:19 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:56:20 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:20 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:20 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:56:20 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:56:20 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:20 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:20 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:20 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:20 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:56:37 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:56:37 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:38 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:38 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:56:38 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:56:38 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:38 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:38 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:38 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:38 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:56:41 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:56:42 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:42 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:42 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:56:42 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:56:42 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:42 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:42 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:42 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:56:42 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:57:25 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:57:25 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:57:25 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:57:25 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:57:25 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:57:25 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:57:25 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:57:25 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:57:25 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:57:25 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:59:37 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:59:37 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:37 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:59:37 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:59:37 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:37 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:37 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:37 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:37 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 01:59:39 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:59:39 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:39 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:39 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 01:59:39 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 01:59:39 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:39 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:39 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:39 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 01:59:39 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:00:01 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:00:02 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:02 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:02 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:00:02 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:00:03 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:03 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:03 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:03 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:03 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:00:05 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:00:06 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:06 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:06 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:00:06 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:00:06 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:06 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:06 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:06 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:06 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:00:31 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:00:32 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:32 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:32 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:00:32 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:00:32 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:32 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:32 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:32 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:32 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:00:44 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:00:44 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:44 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:00:44 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:00:44 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:44 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:44 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:44 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:00:44 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:05:53 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:05:54 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:05:54 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:05:54 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:05:54 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:05:54 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:05:54 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:05:54 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:05:54 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:05:54 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:06:19 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:06:19 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:06:19 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:06:19 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:06:19 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:06:19 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:06:19 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:06:19 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:06:19 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:06:19 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:06:19 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:06:19 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:08:29 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:08:29 [INFO] Entrando en el método Login() de la clase LoginController
+12/02/2024 02:08:30 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:30 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:30 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:08:30 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:08:30 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:30 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:30 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:30 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:30 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:30 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:30 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:08:34 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:08:34 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:34 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:34 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:08:34 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:08:34 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:34 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:34 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:34 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:34 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:34 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:08:34 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:29:30 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:29:31 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:31 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:31 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:29:31 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:29:31 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:32 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:32 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:32 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:32 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:32 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:32 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:29:37 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:29:37 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:37 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:29:37 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:29:37 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:37 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:37 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:37 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:37 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:37 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:29:37 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:30:23 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:30:24 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:30:24 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:30:24 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:30:24 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:30:24 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:30:24 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:30:24 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:30:24 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:30:24 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:30:24 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:30:24 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:32:11 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:11 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:11 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:11 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:11 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:32:11 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:11 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:11 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:11 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:11 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:11 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:11 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:32:41 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:41 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:41 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:41 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:41 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:32:41 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:41 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:41 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:41 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:41 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:41 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:41 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:32:43 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:43 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:43 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:43 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:43 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:32:43 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:43 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:43 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:43 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:43 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:43 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:43 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:32:45 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:45 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:45 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:45 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:32:45 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:45 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:45 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:45 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:45 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:45 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:45 [INFO] Entrando en el método Home() de la clase LoginController
+12/02/2024 02:32:55 [INFO] Entrando en el método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:55 [INFO] Entrando en el método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:55 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:55 [INFO] Saliendo del método obtenerUsuarioPorEmail() de la clase UsuarioServicioImpl
+12/02/2024 02:32:55 [INFO] Entrando en el método obtenerMotosPorPropietarioId() de la clase MotoServicioImpl
+12/02/2024 02:32:55 [INFO] Entrando en el método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:55 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:55 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:55 [INFO] Entrando en el método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:55 [INFO] Saliendo del método cuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:55 [INFO] Saliendo del método listaCuentaToDto() de la clase ConvertirAdtoImpl
+12/02/2024 02:32:55 [INFO] Entrando en el método Home() de la clase LoginController
