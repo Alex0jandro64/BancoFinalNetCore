@@ -21,16 +21,22 @@
             </div>
         </div>
     </div>
-    <select id="cuentaBancariaSelect">
+    <form method="get" action="@Url.Action("Home", "MenuPrincipal")">
+        <select id="cuentaBancariaSelect" name="cuentaBancariaSelect">
         @foreach (var cuenta in cuentas)
         {
             <option value="@cuenta.CodigoIban">@cuenta.CodigoIban</option>
         }
     </select>
+        <input type="hidden" id="cuentaBancariaSelectHidden" name="cuentaBancariaSelectHidden">
+
+        <button type="submit">Cambiar cuenta</button>
+
+    </form>
     <div class="row">
         
-        <p>Cuenta Bancaria: @ViewBag.CuentasBancarias[0].CodigoIban</p>
-        <p>Saldo: @ViewBag.CuentasBancarias[0].SaldoCuenta</p>
+        <p>Cuenta Bancaria: @ViewBag.CuentaSeleccionada.CodigoIban</p>
+        <p>Saldo: @ViewBag.CuentaSeleccionada.SaldoCuenta €</p>
         </div>
     @if (!string.IsNullOrEmpty(noAdmin))
     {
@@ -50,5 +56,11 @@
             mostrarNotificacion("¡Error!", "Ocurrio un error no esperado, intentelo de nuevo", 'error');
         </script>
     }
-
+    <script>
+        // Script para actualizar el valor del campo oculto cuando se selecciona una opción
+        document.getElementById("cuentaBancariaSelect").addEventListener("change", function () {
+            var selectedValue = this.value;
+            document.getElementById("cuentaBancariaSelectHidden").value = selectedValue;
+        });
+    </script>
 </div>

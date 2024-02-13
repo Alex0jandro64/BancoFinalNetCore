@@ -6928,19 +6928,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {}
+    "C:\\Users\\Puesto17\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj",
+      "projectUniqueName": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj",
       "projectName": "BancoFinalNetCore",
-      "projectPath": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\obj\\",
+      "projectPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj",
+      "packagesPath": "C:\\Users\\Puesto17\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Puesto17\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6954,8 +6954,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj"
+            "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj"
             }
           }
         }
