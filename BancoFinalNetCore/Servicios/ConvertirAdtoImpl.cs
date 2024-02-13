@@ -18,6 +18,8 @@ namespace BancoFinalNetCore.Servicios
                     dto.TlfUsuario = u.TlfUsuario;
                     dto.EmailUsuario = u.EmailUsuario;
                     dto.ClaveUsuario = u.ClaveUsuario;
+                    dto.NombreUsuario = u.NombreUsuario;
+                  dto.ApellidosUsuario = u.ApellidosUsuario;
                     dto.Token = u.Token;
                     dto.ExpiracionToken = u.ExpiracionToken;
                     dto.IdUsuario = u.IdUsuario;

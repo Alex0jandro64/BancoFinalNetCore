@@ -401,6 +401,21 @@ namespace BancoFinalNetCore.Servicios
             return _contexto.Usuarios.Count(u => u.Rol == rol);
         }
 
-
+        public List<UsuarioDTO> buscarPorCoincidenciaEnEmail(string palabra)
+        {
+            try
+            {
+                List<Usuario> usuarios = _contexto.Usuarios.Where(u => u.EmailUsuario.Contains(palabra)).ToList();
+                if (usuarios != null)
+                {
+                    return _convertirAdto.listaUsuarioToDto(usuarios);
+                }
+            }
+            catch (Exception e)
+            {
+                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - buscarPorCoincidenciaEnEmail()] Al buscar el usuario por su email " + e.Message);
+            }
+            return null;
+        }
     }
 }
