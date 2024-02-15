@@ -30,6 +30,7 @@ namespace BancoFinalNetCore.Servicios
         public int contarUsuariosPorRol(string rol);
 
         public List<UsuarioDTO> buscarPorCoincidenciaEnEmail(string palabra);
+        public void darRolUsuario(UsuarioDTO usuarioDto);
 
     }
 }

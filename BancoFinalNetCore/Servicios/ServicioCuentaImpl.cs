@@ -38,15 +38,19 @@ namespace BancoFinalNetCore.Servicios
             }
         }
 
-        public CuentaBancaria GenerarCuentaBancaria(Usuario usuario)
+        public CuentaBancaria GenerarCuentaBancaria(UsuarioDTO usuarioDto)
         {
+            var usuario = _contexto.Usuarios.Find(usuarioDto.IdUsuario);
             CuentaBancaria cuentaBancaria = new CuentaBancaria();
             do
             {
                 cuentaBancaria.CodigoIban = GenerateRandomIBAN();
             } while (_contexto.CuentasBancarias.Any(u => u.CodigoIban == cuentaBancaria.CodigoIban));
             cuentaBancaria.SaldoCuenta = 0;
+
             cuentaBancaria.UsuarioCuenta = usuario;
+            _contexto.CuentasBancarias.Add(cuentaBancaria);
+            _contexto.SaveChanges();
             return cuentaBancaria;
         }
 

@@ -66,10 +66,12 @@ namespace BancoFinalNetCore.Servicios
                 
                 string token = generarToken();
                 usuarioDao.Token = token;
-                CuentaBancaria cuentaNueva = _servicioCuenta.GenerarCuentaBancaria(usuarioDao);
                 _contexto.Usuarios.Add(usuarioDao);
-                _contexto.CuentasBancarias.Add(cuentaNueva);
                 _contexto.SaveChanges();
+                userDTO.IdUsuario = usuarioDao.IdUsuario;
+                CuentaBancaria cuentaNueva = _servicioCuenta.GenerarCuentaBancaria(userDTO);
+                
+               
 
                 string nombreUsuario = usuarioDao.NombreUsuario;
                 _servicioEmail.enviarEmailConfirmacion(userDTO.EmailUsuario, nombreUsuario, token);
@@ -416,6 +418,26 @@ namespace BancoFinalNetCore.Servicios
                 EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - buscarPorCoincidenciaEnEmail()] Al buscar el usuario por su email " + e.Message);
             }
             return null;
+        }
+
+        public void darRolUsuario(UsuarioDTO usuarioDto)
+        {
+            try
+            {
+                var usuario = _contexto.Usuarios.Find(usuarioDto.IdUsuario);
+                if (usuario.Rol.Equals("ROLE_USER"))
+                {
+                   usuario.Rol = "ROLE_ADMIN";
+                }
+                
+
+                
+            }catch(Exception e )
+            {
+                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - darRolUsuario()] Al buscar el usuario por su email " + e.Message);
+
+            }
+
         }
     }
 }

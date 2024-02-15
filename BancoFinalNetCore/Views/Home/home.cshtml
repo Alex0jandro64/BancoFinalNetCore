@@ -21,17 +21,20 @@
             </div>
         </div>
     </div>
-    <form method="get" action="@Url.Action("Home", "MenuPrincipal")">
+    <form id="cambioCuentaForm" method="get" action="@Url.Action("Home", "MenuPrincipal")">
         <select id="cuentaBancariaSelect" name="cuentaBancariaSelect">
-        @foreach (var cuenta in cuentas)
-        {
-            <option value="@cuenta.CodigoIban">@cuenta.CodigoIban</option>
-        }
-    </select>
+            @foreach (var cuenta in cuentas)
+            {
+                <option value="@cuenta.CodigoIban">@cuenta.CodigoIban</option>
+            }
+        </select>
         <input type="hidden" id="cuentaBancariaSelectHidden" name="cuentaBancariaSelectHidden">
-
         <button type="submit">Cambiar cuenta</button>
+    </form>
 
+    <!-- Segundo formulario para crear una nueva cuenta bancaria -->
+    <form id="crearCuentaForm" method="post" action="/auth/crear-cuenta-bancaria">
+        <button type="submit">Crear cuenta bancaria</button>
     </form>
     <div class="row">
         

@@ -79,27 +79,6 @@ function confirmar(mensaje)
         return result.isConfirmed;
     });
 }
-
-function confirmarEliminarMoto(event)
-{
-    const idMoto = event.currentTarget.getAttribute("data-id");
-    confirmar("eliminar").then(function(confirmado) {
-        if (confirmado)
-        {
-            window.location.href = 'https://localhost:7142/privada/eliminar-moto/' + idMoto;
-        }
-    });
-}
-function confirmarCancelarQuedada(event)
-{
-    const idQuedada = event.currentTarget.getAttribute("data-id");
-    confirmar("cancelar").then(function(confirmado) {
-        if (confirmado)
-        {
-            window.location.href = 'https://localhost:7142/privada/quedadas/detalle-quedada/cancelar-quedada/' + idQuedada;
-        }
-    });
-}
 function confirmarEliminar(event)
 {
     const idUsuario = event.currentTarget.getAttribute("data-id");
@@ -107,6 +86,14 @@ function confirmarEliminar(event)
         if (confirmado)
         {
             window.location.href = 'https://localhost:7064/privada/eliminar-usuario/' + idUsuario;
+        }
+    });
+}
+function confirmarEditarRol(event) {
+    const idUsuario = event.currentTarget.getAttribute("data-id");
+    confirmar("editar").then(function (confirmado) {
+        if (confirmado) {
+            window.location.href = 'https://localhost:7064/privada/editarRol-usuario/' + idUsuario;
         }
     });
 }

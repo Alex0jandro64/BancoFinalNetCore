@@ -5,7 +5,7 @@ namespace BancoFinalNetCore.Servicios
 {
     public interface ICuentaServicio
     {
-        public CuentaBancaria GenerarCuentaBancaria(Usuario usuario);
+        public CuentaBancaria GenerarCuentaBancaria(UsuarioDTO usuarioDto);
         public List<CuentaBancariaDTO> obtenerCuentasPorUsuarioId(long id);
     }
 }

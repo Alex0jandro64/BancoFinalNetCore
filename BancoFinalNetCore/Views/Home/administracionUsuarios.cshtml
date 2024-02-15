@@ -47,6 +47,7 @@
                             <th class="tableCustom">Fecha de registro</th>
                             <th class="tableCustom">Cuenta activa</th>
                             <th class="tableCustom">Rol</th>
+                            <th class="tableCustom" asp:authorize="User.IsInRole('ROLE_ADMIN')">Dar Rol</th>
                             <th class="tableCustom" asp:authorize="User.IsInRole('ROLE_ADMIN')">Eliminado</th>
                         </tr>
                     </thead>
@@ -61,6 +62,11 @@
                                 <td>@usuario.FchAltaUsuario</td>
                                 <td>@(usuario.MailConfirmado ? "Sí" : "No")</td>
                                 <td>@(usuario.Rol == "ROLE_USER" ? "USER" : "ADMIN")</td>
+                                <td asp:authorize="User.IsInRole('ROLE_ADMIN')">
+                                    <a class="btn btn-danger" data-id="@usuario.IdUsuario" onclick="confirmarEditarRol(event)">
+                                        <i class="bi bi-trash"> Dar Rol</i>
+                                    </a>
+                                </td>
                                 <td asp:authorize="User.IsInRole('ROLE_ADMIN')">
                                     <a class="btn btn-danger" data-id="@usuario.IdUsuario" onclick="confirmarEliminar(event)">
                                         <i class="bi bi-trash"> Eliminar</i>

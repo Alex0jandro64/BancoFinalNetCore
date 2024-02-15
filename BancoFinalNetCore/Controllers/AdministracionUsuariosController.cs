@@ -120,25 +120,23 @@ namespace BancoFinalNetCore.Controllers
         /// <param name="id">ID del usuario a editar.</param>
         [Authorize(Roles = "ROLE_ADMIN")]
         [HttpGet]
-        [Route("/privada/editar-usuario/{id}")]
-        public IActionResult MostrarFormularioEdicion(long id)
+        [Route("/privada/editarRol-usuario/{id}")]
+        public IActionResult EditarRolUsuario(long id)
         {
             try
             {
-                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método MostrarFormularioEdicion() de la clase AdministracionUsuariosController");
+                List<UsuarioDTO> usuarios = _usuarioServicio.obtenerTodosLosUsuarios();
 
-                UsuarioDTO usuarioDTO = _usuarioServicio.buscarPorId(id);
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método EditarRolUsuario() de la clase AdministracionUsuariosController");
 
-                if (usuarioDTO == null)
-                {
-                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método MostrarFormularioEdicion() de la clase AdministracionUsuariosController. No se encontró al usuario con id " + id);
-                    return View("~/Views/Home/administracionUsuarios.cshtml");
-                }
-                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método MostrarFormularioEdicion() de la clase AdministracionUsuariosController.");
-                return View("~/Views/Home/editarUsuario.cshtml", usuarioDTO);
+                UsuarioDTO usuarioDto = _usuarioServicio.buscarPorId(id);
+                _usuarioServicio.darRolUsuario(usuarioDto);
+                ViewBag.Usuarios = _usuarioServicio.obtenerTodosLosUsuarios();
+                return View("~/Views/Home/administracionUsuarios.cshtml");
             }
             catch (Exception e)
             {
+                ViewBag.Usuarios = _usuarioServicio.obtenerTodosLosUsuarios();
                 ViewData["error"] = "Ocurrió un error al obtener el usuario para editar";
                 EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método MostrarFormularioEdicion() de la clase AdministracionUsuariosController: " + e.Message + e.StackTrace);
                 return View("~/Views/Home/dashboard.cshtml");

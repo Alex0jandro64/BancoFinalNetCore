@@ -23,7 +23,7 @@
                     <ul class="navbar-nav flex-grow-1">
                         @if (User.IsInRole("ROLE_ADMIN"))
                         {
-                            <li class="nav-item">
+                            <li class="nav-item me-3">
                                 <a class="nav-link text-dark" href="/privada/administracion-usuarios" role="button">Adminitrar Usuarios</a>
                             </li>
                         }
@@ -31,12 +31,13 @@
 
                         @if (!User.Identity.IsAuthenticated)
                         {
-                            <li class="nav-item">
+                            <li class="nav-item me-3">
                                 <a class="nav-link text-dark" href="/auth/login" role="button">iniciar sesión</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item me-3">
                                 <a class="nav-link text-dark" href="/auth/crear-cuenta" role="button">crear cuenta</a>
                             </li>
+                            
                         }
                         else
                         {
@@ -45,8 +46,11 @@
                                     <button type="button" class="btn buttonPrincipal" onclick="confirmarLogout()"> Cerrar sesión</button>
                                 </form>
                              </li>
-                            <li class="nav-item">
+                            <li class="nav-item me-3">
                                 <a class="nav-link text-dark" href="/privada/home" role="button">Inicio</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-dark" href="/privada/nuevaTransaccion" role="button">Nueva Transaccion</a>
                             </li>
                         }
 

@@ -1,0 +1,28 @@
+﻿@using BancoFinalNetCore.DTO
+@model BancoFinalNetCore.DTO.TransaccionDTO
+@{
+    ViewData["Title"] = "NuevaTransaccion";
+    List<CuentaBancariaDTO> cuentas = ViewBag.CuentasBancarias;
+}
+
+<form class="form" asp-action="/privada/crearNuevaTransaccion" enctype="multipart/form-data" method="post" asp-for="TransaccionDTOString">
+    <h2>Formulario de Transferencia</h2>
+    <div class="mb-3">
+    <label for="usuarioTransaccionRemitente">Selecciona una cuenta Remitente:</label>
+    <select id="cuentaBancariaSelect" name="cuentaBancariaSelect">
+        @foreach (var cuenta in cuentas)
+        {
+            <option value="@cuenta.CodigoIban">@cuenta.CodigoIban</option>
+        }
+    </select>
+    </div>
+    <div class="mb-3">
+    <label for="cantidadTransaccion">Cantidad:</label>
+    <input type="number" id="cantidadTransaccion" name="cantidadTransaccion" placeholder="Ingrese la cantidad" required min="0">
+    </div>
+    <div class="mb-3">
+    <label for="usuarioTransaccionDestinatario">Código IBAN Destinatario:</label>
+    <input type="text" id="usuarioTransaccionDestinatario" name="usuarioTransaccionDestinatario" placeholder="Ingrese el código IBAN" required>
+    </div>
+    <input type="submit" value="Realizar Transferencia">
+</form>
