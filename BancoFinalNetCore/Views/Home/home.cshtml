@@ -3,6 +3,7 @@
 ﻿@{
     ViewData["Title"] = "dashboard";
     var noAdmin = ViewData["noAdmin"] as string;
+    var TransaccionRealizada = ViewData["TransaccionRealizada"] as string;
     var noSePuedeEliminar = ViewData["noSePuedeEliminar"] as string;
     var error = ViewData["error"] as string;
     List<CuentaBancariaDTO> cuentas = ViewBag.CuentasBancarias;
@@ -45,6 +46,12 @@
     {
         <script>
             mostrarNotificacion("¡Recurso prohibido!", "No tiene los permisos suficientes para acceder a este recurso", 'error');
+        </script>
+    }
+    @if (!string.IsNullOrEmpty(TransaccionRealizada))
+    {
+        <script>
+            mostrarNotificacion("¡Transaccion Realizada!", "Se a realizado la transaccion con exito", 'success');
         </script>
     }
     @if (!string.IsNullOrEmpty(noSePuedeEliminar))

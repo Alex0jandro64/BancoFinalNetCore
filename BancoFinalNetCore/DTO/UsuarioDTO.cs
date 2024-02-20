@@ -18,7 +18,7 @@ namespace BancoFinalNetCore.DTO
         public DateTime? ExpiracionToken { get; set; }
         public string Rol { get; set; }
         public bool? MailConfirmado { get; set; }
-        public byte[] FotoPerfil { get; set; }
+        public byte[]? FotoPerfil { get; set; }
         public List<CuentaBancaria> CuentasBancarias { get; set; }
         public List<Cita> CitasUsuario { get; set; }
     }

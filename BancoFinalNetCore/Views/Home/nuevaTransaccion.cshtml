@@ -3,26 +3,48 @@
 @{
     ViewData["Title"] = "NuevaTransaccion";
     List<CuentaBancariaDTO> cuentas = ViewBag.CuentasBancarias;
+    var CuentaNoEncontrada = ViewData["CuentaNoEncontrada"] as string;
+    var MismaCuenta = ViewData["MismaCuenta"] as string;
+    var NoSaldoSuficiente = ViewData["NoSaldoSuficiente"] as string;
 }
 
-<form class="form" asp-action="/privada/crearNuevaTransaccion" enctype="multipart/form-data" method="post" asp-for="TransaccionDTOString">
+<form class="form" asp-action="TransaccionPost" asp-controller="Transaccion" enctype="multipart/form-data" method="post" asp-for="TransaccionDTO">
     <h2>Formulario de Transferencia</h2>
     <div class="mb-3">
-    <label for="usuarioTransaccionRemitente">Selecciona una cuenta Remitente:</label>
-    <select id="cuentaBancariaSelect" name="cuentaBancariaSelect">
+        <label for="CuentaRemitenteId">Selecciona una cuenta Remitente:</label>
+        <select id="CuentaRemitenteId" name="CuentaRemitenteId">
         @foreach (var cuenta in cuentas)
         {
-            <option value="@cuenta.CodigoIban">@cuenta.CodigoIban</option>
+            <option value="@cuenta.IdCuenta">@cuenta.CodigoIban</option>
         }
     </select>
     </div>
     <div class="mb-3">
-    <label for="cantidadTransaccion">Cantidad:</label>
-    <input type="number" id="cantidadTransaccion" name="cantidadTransaccion" placeholder="Ingrese la cantidad" required min="0">
+        <label for="Cantidad">Cantidad:</label>
+        <input type="number" id="Cantidad" name="Cantidad" placeholder="Ingrese la cantidad" required min="0">
     </div>
     <div class="mb-3">
-    <label for="usuarioTransaccionDestinatario">Código IBAN Destinatario:</label>
-    <input type="text" id="usuarioTransaccionDestinatario" name="usuarioTransaccionDestinatario" placeholder="Ingrese el código IBAN" required>
+        <label for="IbanDestino">Código IBAN Destinatario:</label>
+        <input type="text" id="IbanDestino" name="IbanDestino" placeholder="Ingrese el código IBAN" required>
     </div>
     <input type="submit" value="Realizar Transferencia">
 </form>
+
+@if (!string.IsNullOrEmpty(CuentaNoEncontrada))
+{
+    <script>
+        mostrarNotificacion("No se a Encontrado la cuenta", "La cuenta no existe o esta mal escrito", 'error');
+    </script>
+}
+@if (!string.IsNullOrEmpty(MismaCuenta))
+{
+    <script>
+        mostrarNotificacion("Misma Cuenta", "No puede realizar una transaccion a la misma cuenta", 'error');
+    </script>
+}
+@if (!string.IsNullOrEmpty(NoSaldoSuficiente))
+{
+    <script>
+        mostrarNotificacion("Sin saldo", "No hay saldo suficiente para la transaccion", 'error');
+    </script>
+}

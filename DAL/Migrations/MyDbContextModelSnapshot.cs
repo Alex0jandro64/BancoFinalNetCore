@@ -113,7 +113,7 @@ namespace DAL.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("IdTransaccion"));
 
-                    b.Property<double>("CantidadTransaccion")
+                    b.Property<decimal>("CantidadTransaccion")
                         .HasColumnType("decimal(18,2)")
                         .HasColumnName("cantidad_transaccion");
 

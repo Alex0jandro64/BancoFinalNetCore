@@ -12,12 +12,14 @@ namespace BancoFinalNetCore.Controllers
         private readonly IUsuarioServicio _usuarioServicio;
         private readonly ICuentaServicio _cuentaServicio;
         private readonly IConvertirAdao _convertirAdao;
+        private readonly ITransaccionServicio _transaccionServicio;
 
-        public TransaccionController(IConvertirAdao convertirAdao, IUsuarioServicio usuarioServicio, ICuentaServicio cuentaServicio)
+        public TransaccionController(ITransaccionServicio transaccionServicio ,IConvertirAdao convertirAdao, IUsuarioServicio usuarioServicio, ICuentaServicio cuentaServicio)
         {
             _usuarioServicio = usuarioServicio;
             _cuentaServicio = cuentaServicio;
             _convertirAdao = convertirAdao;
+            _transaccionServicio = transaccionServicio;
         }
 
         [Authorize]
@@ -39,19 +41,49 @@ namespace BancoFinalNetCore.Controllers
         [Authorize]
         [HttpPost]
         [Route("/privada/crearNuevaTransaccion")]
-        public IActionResult TransaccionPost()
+        public IActionResult TransaccionPost(TransaccionDTO transaccionDTO)
         {
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método CuentaPost() de la clase MenuPrincipalController");
                 UsuarioDTO usuarioDto = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
 
-                List<CuentaBancariaDTO> cuentasBancariasDTO = _cuentaServicio.obtenerCuentasPorUsuarioId(usuarioDto.IdUsuario);
+                
 
-                ViewBag.UsuarioDTO = usuarioDto;
-                ViewBag.CuentasBancarias = cuentasBancariasDTO;
+                _transaccionServicio.registrarTransaccion(transaccionDTO);
 
-                return View("~/Views/Home/home.cshtml");
+                
+
+                if (transaccionDTO.IbanDestino == "CuentaNoEncontrada")
+                {
+                    ViewData["CuentaNoEncontrada"] = "No existe esa cuenta";
+                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método TransaccionPost() de la clase TransaccionController. " + ViewData["CuentaNoEncontrada"]);
+                    return View("~/Views/Home/nuevaTransaccion.cshtml");
+
+                }
+                else if (transaccionDTO.IbanDestino == "MismaCuenta")
+                {
+                    ViewData["MismaCuenta"] = "No puede hacer una transferencia a la misma cuenta";
+                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método TransaccionPost() de la clase TransaccionController. " + ViewData["MismaCuenta"]);
+                    return View("~/Views/Home/nuevaTransaccion.cshtml");
+                }
+                else if (transaccionDTO.IbanDestino == "NoSaldoSuficiente")
+                {
+                    ViewData["NoSaldoSuficiente"] = "No hay saldo Suficiente";
+                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método TransaccionPost() de la clase TransaccionController. " + ViewData["NoSaldoSuficiente"]);
+                    return View("~/Views/Home/nuevaTransaccion.cshtml");
+                }
+                else
+                {
+                    ViewData["TransaccionRealizada"] = "Registro del nuevo usuario OK";
+                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método TransaccionPost() de la clase TransaccionController. " + ViewData["MensajeRegistroExitoso"]);
+                    List<CuentaBancariaDTO> cuentasBancariasDTO = _cuentaServicio.obtenerCuentasPorUsuarioId(usuarioDto.IdUsuario);
+                    ViewBag.CuentaSeleccionada = cuentasBancariasDTO[0];
+                    ViewBag.UsuarioDTO = usuarioDto;
+                    ViewBag.CuentasBancarias = cuentasBancariasDTO;
+                    return View("~/Views/Home/home.cshtml");
+
+                }
             }
             catch (Exception e)
             {

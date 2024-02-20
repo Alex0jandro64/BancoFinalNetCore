@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DAL.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20240208131528_migracion")]
+    [Migration("20240220114825_migracion")]
     partial class migracion
     {
         /// <inheritdoc />
@@ -116,7 +116,7 @@ namespace DAL.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("IdTransaccion"));
 
-                    b.Property<double>("CantidadTransaccion")
+                    b.Property<decimal>("CantidadTransaccion")
                         .HasColumnType("decimal(18,2)")
                         .HasColumnName("cantidad_transaccion");
 

@@ -121,7 +121,7 @@ namespace DAL.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     usuarioTransaccionRemitente = table.Column<long>(type: "bigint", nullable: false),
                     usuarioTransaccionDestinatario = table.Column<long>(type: "bigint", nullable: false),
-                    cantidad_transaccion = table.Column<double>(type: "numeric(18,2)", nullable: false),
+                    cantidad_transaccion = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
                     fecha_transaccion = table.Column<DateTime>(type: "timestamp", nullable: false)
                 },
                 constraints: table =>

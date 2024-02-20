@@ -27,6 +27,7 @@ namespace BancoFinalNetCore.Servicios
                     dto.MailConfirmado = u.MailConfirmado;
                     dto.DniUsuario = u.DniUsuario;
                     dto.Rol = u.Rol;
+                dto.FotoPerfil = u.FotoPerfil;
 
                 
                 EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl");

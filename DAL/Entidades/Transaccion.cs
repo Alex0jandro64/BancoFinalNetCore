@@ -27,7 +27,7 @@ namespace DAL.Entidades
         public CuentaBancaria UsuarioTransaccionDestinatario { get; set; }
 
         [Column("cantidad_transaccion", TypeName = "decimal(18,2)")]
-        public double CantidadTransaccion { get; set; }
+        public decimal CantidadTransaccion { get; set; }
 
         [Column("fecha_transaccion", TypeName = "timestamp")]
         public DateTime FechaTransaccion { get; set; }

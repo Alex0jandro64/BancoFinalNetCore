@@ -23,6 +23,7 @@ builder.Services.AddScoped<IConvertirAdto, ConvertirAdtoImpl>();
 builder.Services.AddScoped<IConvertirAdao, ConvertirAdaoImpl>();
 builder.Services.AddScoped<IServicioEmail, ServicioEmailImpl>();
 builder.Services.AddScoped<ICuentaServicio, ServicioCuentaImpl>();
+builder.Services.AddScoped<ITransaccionServicio, TransaccionServicioImpl>();
 
 
 builder.Services.AddAuthentication(options =>
