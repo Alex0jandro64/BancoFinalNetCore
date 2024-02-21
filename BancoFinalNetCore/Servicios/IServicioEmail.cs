@@ -1,11 +1,24 @@
 ﻿namespace BancoFinalNetCore.Servicios
 {
+    /// <summary>
+    /// Interfaz que define los métodos para enviar correos electrónicos.
+    /// </summary>
     public interface IServicioEmail
     {
-        public void enviarEmailRecuperacion(String emailDestino, String nombreUsuario, String token);
+        /// <summary>
+        /// Envía un correo electrónico para recuperación de contraseña.
+        /// </summary>
+        /// <param name="emailDestino">Correo electrónico de destino.</param>
+        /// <param name="nombreUsuario">Nombre del usuario.</param>
+        /// <param name="token">Token necesario para recuperar la contraseña.</param>
+        public void enviarEmailRecuperacion(string emailDestino, string nombreUsuario, string token);
 
-        void enviarEmailConfirmacion(String emailDestino, String nombreUsuario, String token);
-
-
+        /// <summary>
+        /// Envía un correo electrónico de confirmación.
+        /// </summary>
+        /// <param name="emailDestino">Correo electrónico de destino.</param>
+        /// <param name="nombreUsuario">Nombre del usuario.</param>
+        /// <param name="token">Token de confirmación.</param>
+        void enviarEmailConfirmacion(string emailDestino, string nombreUsuario, string token);
     }
 }

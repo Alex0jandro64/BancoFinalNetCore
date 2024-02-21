@@ -1,11 +1,20 @@
 ﻿using BancoFinalNetCore.Util;
+using System;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace BancoFinalNetCore.Servicios
 {
+    /// <summary>
+    /// Implementación concreta de la interfaz IServicioEncriptar que proporciona funcionalidades de encriptación.
+    /// </summary>
     public class ServicioEncriptarImpl : IServicioEncriptar
     {
+        /// <summary>
+        /// Encripta una contraseña utilizando el algoritmo SHA256.
+        /// </summary>
+        /// <param name="contraseña">La contraseña a encriptar.</param>
+        /// <returns>La contraseña encriptada o null si ocurrió un error.</returns>
         public string Encriptar(string contraseña)
         {
             try
@@ -24,10 +33,14 @@ namespace BancoFinalNetCore.Servicios
             }
             catch (ArgumentException e)
             {
-                EscribirLog.escribirEnFicheroLog("[Error  ServicioEncriptarImpl - Encriptar()] Error al encriptar: " + e.Message);
+                EscribirLog.escribirEnFicheroLog("[Error ServicioEncriptarImpl - Encriptar()] Error al encriptar: " + e.Message);
                 return null;
             }
-
+            catch (Exception ex)
+            {
+                EscribirLog.escribirEnFicheroLog("[Error ServicioEncriptarImpl - Encriptar()] Error no controlado al encriptar: " + ex.Message);
+                return null;
+            }
         }
     }
 }

@@ -589,74 +589,117 @@ namespace BancoFinalNetCore.Servicios
             }
         }
 
+        /// <summary>
+        /// Actualiza un usuario en la base de datos con la información proporcionada en el objeto UsuarioDTO.
+        /// </summary>
+        /// <param name="usuarioModificado">El objeto UsuarioDTO con la información actualizada del usuario.</param>
         public void actualizarUsuario(UsuarioDTO usuarioModificado)
         {
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método actualizarUsuario() de la clase UsuarioServicioImpl");
 
+                // Buscar el usuario en la base de datos
                 Usuario? usuarioActual = _contexto.Usuarios.Find(usuarioModificado.IdUsuario);
 
                 if (usuarioActual != null)
                 {
+                    // Actualizar la foto de perfil del usuario
                     usuarioActual.FotoPerfil = usuarioModificado.FotoPerfil;
 
+                    // Guardar los cambios en la base de datos
                     _contexto.Usuarios.Update(usuarioActual);
                     _contexto.SaveChanges();
                     EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método actualizarUsuario() de la clase UsuarioServicioImpl. Usuario actualizado OK");
                 }
                 else
                 {
+                    // Usuario no encontrado en la base de datos
                     EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método actualizarUsuario() de la clase UsuarioServicioImpl. Usuario no encontrado");
                 }
             }
             catch (DbUpdateException dbe)
             {
+                // Error al actualizar el usuario en la base de datos
                 EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - actualizarUsuario()] Error de persistencia al modificar el usuario " + dbe.Message);
+            }
+            catch (Exception ex)
+            {
+                // Error no controlado
+                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - actualizarUsuario()] Error no controlado: " + ex.Message);
             }
         }
 
+        /// <summary>
+        /// Cuenta el número de usuarios por rol.
+        /// </summary>
+        /// <param name="rol">El rol de los usuarios a contar.</param>
+        /// <returns>El número de usuarios con el rol especificado.</returns>
         public int contarUsuariosPorRol(string rol)
         {
-            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método contarUsuariosPorRol() de la clase UsuarioServicioImpl");
-            return _contexto.Usuarios.Count(u => u.Rol == rol);
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método contarUsuariosPorRol() de la clase UsuarioServicioImpl");
+                return _contexto.Usuarios.Count(u => u.Rol == rol);
+            }
+            catch (Exception ex)
+            {
+                // Error no controlado
+                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - contarUsuariosPorRol()] Error no controlado: " + ex.Message);
+                throw; // Lanzar la excepción para que sea manejada en un nivel superior
+            }
         }
 
+        /// <summary>
+        /// Busca usuarios por coincidencia en su email.
+        /// </summary>
+        /// <param name="palabra">La palabra a buscar en los emails de los usuarios.</param>
+        /// <returns>Una lista de usuarios que contienen la palabra en su email, o null si no se encontraron coincidencias.</returns>
         public List<UsuarioDTO> buscarPorCoincidenciaEnEmail(string palabra)
         {
             try
             {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método buscarPorCoincidenciaEnEmail() de la clase UsuarioServicioImpl");
                 List<Usuario> usuarios = _contexto.Usuarios.Where(u => u.EmailUsuario.Contains(palabra)).ToList();
                 if (usuarios != null)
                 {
                     return _convertirAdto.listaUsuarioToDto(usuarios);
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - buscarPorCoincidenciaEnEmail()] Al buscar el usuario por su email " + e.Message);
+                // Error no controlado
+                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - buscarPorCoincidenciaEnEmail()] Al buscar el usuario por su email " + ex.Message);
             }
             return null;
         }
 
+        /// <summary>
+        /// Asigna un nuevo rol a un usuario.
+        /// </summary>
+        /// <param name="usuarioDto">El DTO del usuario al que se le asignará el nuevo rol.</param>
         public void darRolUsuario(UsuarioDTO usuarioDto)
         {
             try
             {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método darRolUsuario() de la clase UsuarioServicioImpl");
                 var usuario = _contexto.Usuarios.Find(usuarioDto.IdUsuario);
-                if (usuario.Rol.Equals("ROLE_USER"))
+                if (usuario != null && usuario.Rol.Equals("ROLE_USER"))
                 {
-                   usuario.Rol = "ROLE_ADMIN";
+                    usuario.Rol = "ROLE_ADMIN";
+                    _contexto.SaveChanges();
+                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método darRolUsuario() de la clase UsuarioServicioImpl. Rol actualizado OK");
                 }
-                
-
-                
-            }catch(Exception e )
-            {
-                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - darRolUsuario()] Al buscar el usuario por su email " + e.Message);
-
+                else
+                {
+                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método darRolUsuario() de la clase UsuarioServicioImpl. Usuario no encontrado o no tiene el rol correcto");
+                }
             }
-
+            catch (Exception ex)
+            {
+                // Error no controlado
+                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - darRolUsuario()] Al buscar el usuario por su email " + ex.Message);
+            }
         }
     }
 }
