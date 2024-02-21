@@ -24,6 +24,8 @@ builder.Services.AddScoped<IConvertirAdao, ConvertirAdaoImpl>();
 builder.Services.AddScoped<IServicioEmail, ServicioEmailImpl>();
 builder.Services.AddScoped<ICuentaServicio, ServicioCuentaImpl>();
 builder.Services.AddScoped<ITransaccionServicio, TransaccionServicioImpl>();
+builder.Services.AddScoped<IOficinaServicio, OficinaServicioImpl>();
+builder.Services.AddScoped<ICitaServicio, CitaServicioImpl>();
 
 
 builder.Services.AddAuthentication(options =>
@@ -39,6 +41,55 @@ builder.Services.AddAuthentication(options =>
 });
 
 var app = builder.Build();
+
+
+// Método para inicializar el usuario administrador
+void InicializarUsuarioAdmin()
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var dbContext = scope.ServiceProvider.GetRequiredService<MyDbContext>();
+        var servicioEncriptar = scope.ServiceProvider.GetRequiredService<IServicioEncriptar>(); // Obtener el servicio de encriptación
+
+        // Verificar si el usuario admin ya existe
+        if (!dbContext.Usuarios.Any(u => u.EmailUsuario == "admin@admin.com"))
+        {
+            // Crear el usuario admin y otros datos asociados
+            var admin = new Usuario
+            {
+                NombreUsuario = "admin",
+                ApellidosUsuario = "admin",
+                TlfUsuario = "admin",
+                ClaveUsuario = "admin", // Considera encriptar la contraseña
+                DniUsuario = "-",
+                EmailUsuario = "admin@admin.com",
+                Rol = "ROLE_ADMIN",
+                MailConfirmado = true
+            };
+
+            admin.ClaveUsuario = servicioEncriptar.Encriptar(admin.ClaveUsuario);
+
+            var cuentaAdmin = new CuentaBancaria
+            {
+                UsuarioCuenta = admin,
+                SaldoCuenta = 120.50m,
+                CodigoIban = "1234"
+            };
+
+            var oficina = new Oficina
+            {
+                DireccionOficina = "Calle Pepe Nº2"
+            };
+
+
+            dbContext.Oficinas.Add(oficina);
+            dbContext.Usuarios.Add(admin);
+            dbContext.CuentasBancarias.Add(cuentaAdmin);
+            dbContext.SaveChanges(); // Guardar los cambios en la base de datos
+        }
+    }
+}
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -59,4 +110,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+InicializarUsuarioAdmin();
 app.Run();
+

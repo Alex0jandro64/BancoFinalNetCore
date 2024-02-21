@@ -20,3 +20,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.ingreso {
+    background-color: #90EE90;
+}
+
+.pago {
+    background-color: #ec5252;
+}

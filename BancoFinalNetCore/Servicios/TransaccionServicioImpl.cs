@@ -11,36 +11,16 @@ namespace BancoFinalNetCore.Servicios
     public class TransaccionServicioImpl : ITransaccionServicio
     {
         private readonly MyDbContext _contexto;
-        private readonly IServicioEncriptar _servicioEncriptar;
-        private readonly IConvertirAdao _convertirAdao;
-        private readonly IConvertirAdto _convertirAdto;
-        private readonly IServicioEmail _servicioEmail;
-        private readonly ICuentaServicio _servicioCuenta;
 
         /// <summary>
         /// Constructor de la clase TransaccionServicioImpl.
         /// </summary>
         /// <param name="contexto">El contexto de la base de datos.</param>
-        /// <param name="servicioEncriptar">El servicio de encriptación.</param>
-        /// <param name="convertirAdao">El servicio de conversión de DTO a DAO.</param>
-        /// <param name="convertirAdto">El servicio de conversión de DAO a DTO.</param>
-        /// <param name="servicioEmail">El servicio de envío de correo electrónico.</param>
-        /// <param name="servicioCuenta">El servicio relacionado con las cuentas bancarias.</param>
         public TransaccionServicioImpl(
-            MyDbContext contexto,
-            IServicioEncriptar servicioEncriptar,
-            IConvertirAdao convertirAdao,
-            IConvertirAdto convertirAdto,
-            IServicioEmail servicioEmail,
-            ICuentaServicio servicioCuenta
+            MyDbContext contexto
         )
         {
             _contexto = contexto;
-            _servicioEncriptar = servicioEncriptar;
-            _convertirAdao = convertirAdao;
-            _convertirAdto = convertirAdto;
-            _servicioEmail = servicioEmail;
-            _servicioCuenta = servicioCuenta;
         }
 
 
@@ -114,6 +94,38 @@ namespace BancoFinalNetCore.Servicios
             {
                 EscribirLog.escribirEnFicheroLog("[Error TransaccionServicioImpl - registrarTransaccion()] Error al registrar una transacción: " + e.Message);
                 return null;
+            }
+        }
+        /// <summary>
+        /// Método para obtener las transacciones asociadas a un usuario específico.
+        /// </summary>
+        /// <param name="userId">ID del usuario del que se desean obtener las transacciones.</param>
+        /// <returns>Una lista de objetos Transaccion asociados al usuario especificado.</returns>
+        public List<Transaccion> ObtenerTransaccionesDeUsuario(long userId)
+        {
+            try
+            {
+                // Se escribe un mensaje de registro al entrar al método.
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método ObtenerTransaccionesDeUsuario() de la clase UsuarioServicioImpl");
+
+                // Se obtienen las transacciones donde el usuario es el destinatario o el remitente.
+                var transacciones = _contexto.Transacciones
+                    .Where(t => t.UsuarioTransaccionDestinatarioId == userId || t.UsuarioTransaccionRemitenteId == userId)
+                    .ToList();
+
+                // Se escribe un mensaje de registro al salir del método.
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ObtenerTransaccionesDeUsuario() de la clase UsuarioServicioImpl");
+
+                return transacciones;
+            }
+            catch (Exception e)
+            {
+                // Se atrapa cualquier excepción que pueda ocurrir.
+                // Se escribe un mensaje de registro indicando el error.
+                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - ObtenerTransaccionesDeUsuario()] Error al obtener transacciones del usuario: " + e.Message);
+
+                // Se retorna una lista vacía debido a que ocurrió un error.
+                return new List<Transaccion>();
             }
         }
     }

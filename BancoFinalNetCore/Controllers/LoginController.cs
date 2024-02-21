@@ -3,36 +3,37 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using System.Text;
-using DAL.Entidades;
-using System.IdentityModel.Tokens.Jwt;
-using Microsoft.IdentityModel.Tokens;
 using BancoFinalNetCore.DTO;
 using BancoFinalNetCore.Util;
-using Microsoft.AspNetCore.Authorization;
+using System;
 
 namespace BancoFinalNetCore.Controllers
 {
-    public class loginController : Controller
+    /// <summary>
+    /// Controlador encargado de gestionar el inicio de sesión de usuarios.
+    /// </summary>
+    public class LoginController : Controller
     {
-
         private readonly IUsuarioServicio _usuarioServicio;
 
-        public loginController(IUsuarioServicio usuarioServicio)
+        public LoginController(IUsuarioServicio usuarioServicio)
         {
             _usuarioServicio = usuarioServicio;
         }
 
+        /// <summary>
+        /// Método para mostrar la vista de inicio de sesión.
+        /// </summary>
         [HttpGet]
         [Route("/auth/login")]
         public IActionResult Login()
         {
-            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método Login() de la clase LoginController");
             try
             {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método Login() de la clase LoginController");
+
                 UsuarioDTO usuarioDTO = new UsuarioDTO();
                 return View("~/Views/Home/login.cshtml", usuarioDTO);
-
             }
             catch (Exception e)
             {
@@ -42,6 +43,9 @@ namespace BancoFinalNetCore.Controllers
             }
         }
 
+        /// <summary>
+        /// Método para procesar el inicio de sesión del usuario.
+        /// </summary>
         [HttpPost]
         [Route("/auth/iniciar-sesion")]
         public IActionResult ProcesarInicioSesion(UsuarioDTO usuarioDTO)
@@ -70,7 +74,7 @@ namespace BancoFinalNetCore.Controllers
 
                     var identidadDeReclamaciones = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-                    // establece una cookie en el navegador con los datos del usuario antes mencionados y se mantiene en el contexto.
+                    // Establece una cookie en el navegador con los datos del usuario antes mencionados y se mantiene en el contexto.
                     HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identidadDeReclamaciones));
 
                     EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController");
@@ -92,6 +96,10 @@ namespace BancoFinalNetCore.Controllers
         }
 
 
+
+        /// <summary>
+        /// Método para confirmar la cuenta de usuario.
+        /// </summary>
         [HttpGet]
         [Route("/auth/confirmar-cuenta")]
         public IActionResult ConfirmarCuenta([FromQuery] string token)
@@ -114,6 +122,7 @@ namespace BancoFinalNetCore.Controllers
                 EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ConfirmarCuenta() de la clase LoginController" +
                     (ViewData["CuentaVerificada"] != null ? ". " + ViewData["CuentaVerificada"] :
                     (ViewData["yaEstabaVerificada"] != null ? ". " + ViewData["yaEstabaVerificada"] : "")));
+
                 return View("~/Views/Home/login.cshtml");
             }
             catch (Exception e)
@@ -124,15 +133,24 @@ namespace BancoFinalNetCore.Controllers
             }
         }
 
-        
-
+        /// <summary>
+        /// Método para cerrar sesión de usuario.
+        /// </summary>
         [HttpPost]
         public IActionResult CerrarSesion()
         {
-            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método CerrarSesion() de la clase LoginController");
-            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Index", "Home");
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método CerrarSesion() de la clase LoginController");
+                HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                return RedirectToAction("Index", "Home");
+            }
+            catch (Exception e)
+            {
+                ViewData["error"] = "Error al procesar la solicitud. Por favor, inténtelo de nuevo.";
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método CerrarSesion() de la clase LoginController: " + e.Message + e.StackTrace);
+                return RedirectToAction("Index", "Home");
+            }
         }
-
     }
 }

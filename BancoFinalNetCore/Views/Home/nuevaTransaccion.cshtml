@@ -3,9 +3,9 @@
 @{
     ViewData["Title"] = "NuevaTransaccion";
     List<CuentaBancariaDTO> cuentas = ViewBag.CuentasBancarias;
-    var CuentaNoEncontrada = ViewData["CuentaNoEncontrada"] as string;
-    var MismaCuenta = ViewData["MismaCuenta"] as string;
-    var NoSaldoSuficiente = ViewData["NoSaldoSuficiente"] as string;
+    var CuentaNoEncontrada = TempData["CuentaNoEncontrada"] as string;
+    var MismaCuenta = TempData["MismaCuenta"] as string;
+    var NoSaldoSuficiente = TempData["NoSaldoSuficiente"] as string;
 }
 
 <form class="form" asp-action="TransaccionPost" asp-controller="Transaccion" enctype="multipart/form-data" method="post" asp-for="TransaccionDTO">

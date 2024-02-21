@@ -2,10 +2,16 @@
 using BancoFinalNetCore.Servicios;
 using BancoFinalNetCore.Util;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.IO;
 
 namespace BancoFinalNetCore.Controllers
 {
+    /// <summary>
+    /// Controlador encargado de gestionar el perfil del usuario.
+    /// </summary>
     public class PerfilController : Controller
     {
         private readonly IUsuarioServicio _usuarioServicio;
@@ -19,27 +25,41 @@ namespace BancoFinalNetCore.Controllers
             _convertirAdao = convertirAdao;
         }
 
+        /// <summary>
+        /// Método para mostrar el perfil del usuario.
+        /// </summary>
         [Authorize]
         [HttpGet]
         [Route("/privada/miPerfil")]
         public IActionResult MiPerfil()
         {
-            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método MiPerfil() de la clase PerfilController");
-            UsuarioDTO u = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
-            ViewBag.UsuarioDTO = u;
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método MiPerfil() de la clase PerfilController");
+                UsuarioDTO u = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
+                ViewBag.UsuarioDTO = u;
 
-            return View("~/Views/Home/miPerfil.cshtml", u);
-
+                return View("~/Views/Home/miPerfil.cshtml", u);
+            }
+            catch (Exception e)
+            {
+                ViewData["error"] = "Error al obtener el perfil del usuario. Por favor, inténtelo de nuevo.";
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se produjo una excepción en el método MiPerfil() de la clase PerfilController: " + e.Message);
+                return View("~/Views/Home/miPerfil.cshtml");
+            }
         }
 
+        /// <summary>
+        /// Método para procesar el formulario de edición del perfil del usuario.
+        /// </summary>
         [HttpPost]
         [Route("/privada/procesar-editar")]
         public IActionResult ProcesarFormularioEdicion(long id, IFormFile foto)
         {
             try
             {
-                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método ProcesarFormularioEdicion() de la clase AdministracionUsuariosController");
-                
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método ProcesarFormularioEdicion() de la clase PerfilController");
+
                 UsuarioDTO usuarioDTO = _usuarioServicio.buscarPorId(id);
 
                 if (foto != null && foto.Length > 0)
@@ -64,17 +84,16 @@ namespace BancoFinalNetCore.Controllers
                 ViewData["EdicionCorrecta"] = "El Usuario se ha editado correctamente";
                 ViewBag.Usuarios = _usuarioServicio.obtenerTodosLosUsuarios();
 
-                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ProcesarFormularioEdicion() de la clase AdministracionUsuariosController. " + ViewData["EdicionCorrecta"]);
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ProcesarFormularioEdicion() de la clase PerfilController. " + ViewData["EdicionCorrecta"]);
                 UsuarioDTO u = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
                 return View("~/Views/Home/miPerfil.cshtml", u);
             }
             catch (Exception e)
             {
                 ViewData["Error"] = "Ocurrió un error al editar el usuario";
-                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método ProcesarFormularioEdicion() de la clase AdministracionUsuariosController: " + e.Message + e.StackTrace);
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se produjo una excepción en el método ProcesarFormularioEdicion() de la clase PerfilController: " + e.Message + e.StackTrace);
                 return View("~/Views/Home/dashboard.cshtml");
             }
         }
-
     }
 }

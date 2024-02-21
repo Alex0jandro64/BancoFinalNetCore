@@ -31,6 +31,7 @@ namespace DAL.Entidades
 
         // Agrega otras DbSet para tus otras entidades
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configura las relaciones y restricciones aquí si es necesario

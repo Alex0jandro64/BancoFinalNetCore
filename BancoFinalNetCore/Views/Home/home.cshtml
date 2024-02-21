@@ -3,18 +3,50 @@
 ﻿@{
     ViewData["Title"] = "dashboard";
     var noAdmin = ViewData["noAdmin"] as string;
-    var TransaccionRealizada = ViewData["TransaccionRealizada"] as string;
+    var TransaccionRealizada = TempData["TransaccionRealizada"] as string;
     var noSePuedeEliminar = ViewData["noSePuedeEliminar"] as string;
     var error = ViewData["error"] as string;
     List<CuentaBancariaDTO> cuentas = ViewBag.CuentasBancarias;
+    var transacciones = ViewBag.Transacciones as List<TransaccionDTO>; // Suponiendo que Transaccion sea el tipo de objeto de tus transacciones
+    var cuentaBancaria = ViewBag.CuentaSeleccionada as CuentaBancariaDTO; // Suponiendo que CuentaBancaria sea el tipo de objeto de tu cuenta bancaria
+
 }
+<style>
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ajusta la altura según tu diseño */
+    }
+
+    .center-content {
+        text-align: center;
+    }
+
+    .center-table {
+        margin: 0 auto;
+    }
+
+    .center-table1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .center-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
 <div class="container py-4">
     <div class="row cardPrincipal">
         <div class="col">
             <h3 class="text-center mt-5 subtituloSecundario3">Home</h3>
             <hr class="border border-2 opacity-55 mb-5 mt-4">
-            <h4 class="text-dark text-center subtituloSecundario">Bienvenido/a <span>@User.Identity.Name</span></h4>
-            <div class="text-center mt-4">
+            <h4 class="text-dark text-center subtituloSecundario">Bienvenido/a <span>@ViewBag.UsuarioDTO.NombreUsuario @ViewBag.UsuarioDTO.ApellidosUsuario</span></h4>
+            <div class="text-center mt-4" style="margin-bottom:30px;">
                 @if (ViewBag.UsuarioDTO.FotoPerfil != null)
                 {
                     <img src="data:image/jpeg;base64,@Convert.ToBase64String(ViewBag.UsuarioDTO.FotoPerfil)" class="rounded-circle img-fluid mx-auto" alt="Imagen de usuario" style="max-width: 100px; max-height: 100px;">
@@ -22,7 +54,32 @@
             </div>
         </div>
     </div>
-    <form id="cambioCuentaForm" method="get" action="@Url.Action("Home", "MenuPrincipal")">
+
+    <h5 style="text-align:center; margin-bottom:30px;">Cuenta Bancaria: @ViewBag.CuentaSeleccionada.CodigoIban</h5>
+    <h5 style="text-align:center;margin-bottom:30px;">Saldo: @ViewBag.CuentaSeleccionada.SaldoCuenta €</h5>
+    <table border="1" class="center-table" style="margin-bottom: 30px;">
+        <thead>
+            <tr>
+                <th style ="padding: 8px";>Cantidad</thstyle>
+                <th style="padding: 8px;">Cuenta Destinataria</th>
+                <th style="padding: 8px;">Cuenta Remitente</th>
+                <th style="padding: 8px;"   >Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaccion in transacciones)
+            {
+                <tr class="@(transaccion.IbanDestino == cuentaBancaria.CodigoIban ? "ingreso" : "pago")">
+                    <td style="padding: 8px;">@((transaccion.IbanDestino == cuentaBancaria.CodigoIban ? "+" : (transaccion.IbanRemitente == cuentaBancaria.CodigoIban ? "-" : "")) + transaccion.Cantidad + " €")</td>
+                    <td style="padding: 8px;">@transaccion.IbanDestino</td>
+                    <td style="padding: 8px;">@transaccion.IbanRemitente</td>
+                    <td style="padding: 8px;">@transaccion.fechaTransaccion.ToString("dd-MM-yyyy HH:mm")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <form style="margin-bottom:30px;" id="cambioCuentaForm" method="get" action="@Url.Action("Home", "MenuPrincipal")" class="center-form">
         <select id="cuentaBancariaSelect" name="cuentaBancariaSelect">
             @foreach (var cuenta in cuentas)
             {
@@ -33,14 +90,13 @@
         <button type="submit">Cambiar cuenta</button>
     </form>
 
-    <!-- Segundo formulario para crear una nueva cuenta bancaria -->
-    <form id="crearCuentaForm" method="post" action="/auth/crear-cuenta-bancaria">
+    <!-- Segundo formulario -->
+    <form id="crearCuentaForm" method="post" action="/auth/crear-cuenta-bancaria" class="center-form">
         <button type="submit">Crear cuenta bancaria</button>
     </form>
     <div class="row">
         
-        <p>Cuenta Bancaria: @ViewBag.CuentaSeleccionada.CodigoIban</p>
-        <p>Saldo: @ViewBag.CuentaSeleccionada.SaldoCuenta €</p>
+        
         </div>
     @if (!string.IsNullOrEmpty(noAdmin))
     {

@@ -37,6 +37,7 @@ namespace BancoFinalNetCore.Servicios
                 dto.DniUsuario = u.DniUsuario;
                 dto.Rol = u.Rol;
                 dto.FotoPerfil = u.FotoPerfil;
+                dto.CitasUsuario = listaCitasToDto( u.CitasUsuario);
 
                 EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl");
                 return dto;
@@ -124,6 +125,172 @@ namespace BancoFinalNetCore.Servicios
             catch (Exception e)
             {
                 EscribirLog.escribirEnFicheroLog($"[ERROR ConvertirAdtoImpl - listaCuentaToDto()] - Error al convertir lista de cuenta bancaria DAO a lista de cuenta bancaria DTO (return null): {e}");
+                return null;
+            }
+        }
+        /// <summary>
+        /// Convierte un objeto de tipo Transaccion a un objeto de tipo TransaccionDTO.
+        /// </summary>
+        /// <param name="u">Objeto Transaccion a convertir.</param>
+        /// <returns>Objeto TransaccionDTO convertido.</returns>
+        public TransaccionDTO transaccionToDto(Transaccion u)
+        {
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método transaccionToDto() de la clase ConvertirAdtoImpl");
+
+                // Crear un nuevo objeto TransaccionDTO y asignar los valores correspondientes
+                TransaccionDTO dto = new TransaccionDTO();
+                dto.fechaTransaccion = u.FechaTransaccion;
+                dto.Cantidad = u.CantidadTransaccion;
+                dto.IdTransaccion = u.IdTransaccion;
+                dto.CuentaDestinoId = u.UsuarioTransaccionDestinatarioId;
+                dto.CuentaRemitenteId = u.UsuarioTransaccionRemitenteId;
+                dto.IbanDestino = u.UsuarioTransaccionDestinatario.CodigoIban;
+                dto.IbanRemitente = u.UsuarioTransaccionRemitente.CodigoIban;
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método transaccionToDto() de la clase ConvertirAdtoImpl");
+                return dto;
+            }
+            catch (Exception e)
+            {
+                // Manejo de excepción: Escribir en el registro de log y devolver null
+                EscribirLog.escribirEnFicheroLog($"[ERROR ConvertirAdtoImpl - transaccionToDto()] - Error al convertir Transaccion a TransaccionDTO (return null): {e}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Convierte una lista de objetos de tipo Transaccion a una lista de objetos de tipo TransaccionDTO.
+        /// </summary>
+        /// <param name="listaTransaccion">Lista de Transacciones a convertir.</param>
+        /// <returns>Lista de TransaccionesDTO convertidas.</returns>
+        public List<TransaccionDTO> listaTransaccionToDto(List<Transaccion> listaTransaccion)
+        {
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método listaTransaccionToDto() de la clase ConvertirAdtoImpl");
+
+                List<TransaccionDTO> listaDto = new List<TransaccionDTO>();
+                foreach (Transaccion u in listaTransaccion)
+                {
+                    listaDto.Add(transaccionToDto(u));
+                }
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método listaTransaccionToDto() de la clase ConvertirAdtoImpl");
+                return listaDto;
+            }
+            catch (Exception e)
+            {
+                // Manejo de excepción: Escribir en el registro de log y devolver null
+                EscribirLog.escribirEnFicheroLog($"[ERROR ConvertirAdtoImpl - listaTransaccionToDto()] - Error al convertir lista de Transacciones a lista de TransaccionesDTO (return null): {e}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Convierte un objeto de tipo Cita a un objeto de tipo CitaDTO.
+        /// </summary>
+        /// <param name="u">Objeto Cita a convertir.</param>
+        /// <returns>Objeto CitaDTO convertido.</returns>
+        public CitaDTO citaToDto(Cita u)
+        {
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método citaToDto() de la clase ConvertirAdtoImpl");
+
+                // Crear un nuevo objeto CitaDTO y asignar los valores correspondientes
+                CitaDTO dto = new CitaDTO();
+                dto.IdCita = u.IdCita;
+                dto.FechaCita = u.FechaCita;
+                dto.MotivoCita = u.MotivoCita;
+                dto.OficinaCitaId = u.OficinaCitaId;
+                dto.OficinaDireccion = u.OficinaCita.DireccionOficina;
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método citaToDto() de la clase ConvertirAdtoImpl");
+                return dto;
+            }
+            catch (Exception e)
+            {
+                // Manejo de excepción: Escribir en el registro de log y devolver null
+                EscribirLog.escribirEnFicheroLog($"[ERROR ConvertirAdtoImpl - citaToDto()] - Error al convertir Cita a CitaDTO (return null): {e}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Convierte una lista de objetos de tipo Cita a una lista de objetos de tipo CitaDTO.
+        /// </summary>
+        /// <param name="listaCitas">Lista de Citas a convertir.</param>
+        /// <returns>Lista de CitasDTO convertidas.</returns>
+        public List<CitaDTO> listaCitasToDto(List<Cita> listaCitas)
+        {
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método listaCitasToDto() de la clase ConvertirAdtoImpl");
+
+                List<CitaDTO> listaDto = new List<CitaDTO>();
+                foreach (Cita u in listaCitas)
+                {
+                    listaDto.Add(citaToDto(u));
+                }
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método listaCitasToDto() de la clase ConvertirAdtoImpl");
+                return listaDto;
+            }
+            catch (Exception e)
+            {
+                // Manejo de excepción: Escribir en el registro de log y devolver null
+                EscribirLog.escribirEnFicheroLog($"[ERROR ConvertirAdtoImpl - listaCitasToDto()] - Error al convertir lista de Citas a lista de CitasDTO (return null): {e}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Convierte un objeto de tipo Oficina a un objeto de tipo OficinaDTO.
+        /// </summary>
+        /// <param name="u">Objeto Oficina a convertir.</param>
+        /// <returns>Objeto OficinaDTO convertido.</returns>
+        public OficinaDTO oficinaToDto(Oficina u)
+        {
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método oficinaToDto() de la clase ConvertirAdtoImpl");
+
+                // Crear un nuevo objeto OficinaDTO y asignar los valores correspondientes
+                OficinaDTO dto = new OficinaDTO();
+                dto.DireccionOficina = u.DireccionOficina;
+                dto.IdOficina = u.IdOficina;
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método oficinaToDto() de la clase ConvertirAdtoImpl");
+                return dto;
+            }
+            catch (Exception e)
+            {
+                // Manejo de excepción: Escribir en el registro de log y devolver null
+                EscribirLog.escribirEnFicheroLog($"[ERROR ConvertirAdtoImpl - oficinaToDto()] - Error al convertir Oficina a OficinaDTO (return null): {e}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Convierte una lista de objetos de tipo Oficina a una lista de objetos de tipo OficinaDTO.
+        /// </summary>
+        /// <param name="listaOficinas">Lista de Oficinas a convertir.</param>
+        /// <returns>Lista de OficinasDTO convertidas.</returns>
+        public List<OficinaDTO> listaOficinaToDto(List<Oficina> listaOficinas)
+        {
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método listaOficinaToDto() de la clase ConvertirAdtoImpl");
+
+                List<OficinaDTO> listaDto = new List<OficinaDTO>();
+                foreach (Oficina u in listaOficinas)
+                {
+                    listaDto.Add(oficinaToDto(u));
+                }
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método listaOficinaToDto() de la clase ConvertirAdtoImpl");
+                return listaDto;
+            }
+            catch (Exception e)
+            {
+                // Manejo de excepción: Escribir en el registro de log y devolver null
+                EscribirLog.escribirEnFicheroLog($"[ERROR ConvertirAdtoImpl - listaOficinaToDto()] - Error al convertir lista de Oficinas a lista de OficinasDTO (return null): {e}");
                 return null;
             }
         }

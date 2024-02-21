@@ -31,7 +31,6 @@ C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\s
 C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\scopedcss\bundle\BancoFinalNetCore.styles.css
 C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\scopedcss\projectbundle\BancoFinalNetCore.bundle.scp.css
-C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFinalNetCore.csproj.CopyComplete
 C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFinalNetCore.dll
 C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\refint\BancoFinalNetCore.dll
 C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFinalNetCore.pdb
@@ -494,3 +493,4 @@ C:\Users\Alex\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\Banco
 C:\Users\Alex\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFinalNetCore.genruntimeconfig.cache
 C:\Users\Alex\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\ref\BancoFinalNetCore.dll
 C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFinalNetCore.sourcelink.json
+C:\Users\Puesto17\Desktop\BancoFinalNetCore\BancoFinalNetCore\obj\Debug\net8.0\BancoFin.7C87BEBE.Up2Date

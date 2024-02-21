@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj": {}
+    "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj": {
+    "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj",
+        "projectUniqueName": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj",
         "projectName": "BancoFinalNetCore",
-        "projectPath": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj",
-        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\obj\\",
+        "projectPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\BancoFinalNetCore.csproj",
+        "packagesPath": "C:\\Users\\Puesto17\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Puesto17\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj"
+              "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj"
               }
             }
           }
@@ -38,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -96,21 +101,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj": {
+    "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\Desktop\\BancoFinalNetCore\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Puesto17\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Puesto17\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -130,12 +135,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.Analyzers": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -181,7 +195,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

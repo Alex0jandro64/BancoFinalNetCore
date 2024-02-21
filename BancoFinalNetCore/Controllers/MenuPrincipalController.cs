@@ -1,62 +1,85 @@
-﻿    using BancoFinalNetCore.DTO;
-    using BancoFinalNetCore.Servicios;
-    using BancoFinalNetCore.Util;
-using DAL.Entidades;
+﻿using BancoFinalNetCore.DTO;
+using BancoFinalNetCore.Servicios;
+using BancoFinalNetCore.Util;
 using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BancoFinalNetCore.Controllers
 {
+    /// <summary>
+    /// Controlador encargado de gestionar el menú principal del usuario.
+    /// </summary>
     public class MenuPrincipalController : Controller
     {
-
         private readonly IUsuarioServicio _usuarioServicio;
         private readonly ICuentaServicio _cuentaServicio;
         private readonly IConvertirAdao _convertirAdao;
+        private readonly ITransaccionServicio _transaccionServicio;
+        private readonly IConvertirAdto _convertirAdto;
 
-        public MenuPrincipalController(IConvertirAdao convertirAdao, IUsuarioServicio usuarioServicio, ICuentaServicio cuentaServicio)
+        public MenuPrincipalController(IConvertirAdto convertirAdto, ITransaccionServicio transaccionServicio, IConvertirAdao convertirAdao, IUsuarioServicio usuarioServicio, ICuentaServicio cuentaServicio)
         {
             _usuarioServicio = usuarioServicio;
             _cuentaServicio = cuentaServicio;
             _convertirAdao = convertirAdao;
+            _transaccionServicio = transaccionServicio;
+            _convertirAdto = convertirAdto;
         }
 
+        /// <summary>
+        /// Método para mostrar la página de inicio del usuario.
+        /// </summary>
         [Authorize]
         [HttpGet]
         [Route("/privada/home")]
         public IActionResult Home(string cuentaBancariaSelect)
         {
-            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método Home() de la clase LoginController");
-            UsuarioDTO u = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
-            List<CuentaBancariaDTO> cuentasBancariasDTO = _cuentaServicio.obtenerCuentasPorUsuarioId(u.IdUsuario);
-            if (cuentaBancariaSelect == null)
+            try
             {
-                ViewBag.CuentaSeleccionada = cuentasBancariasDTO[0];
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método Home() de la clase MenuPrincipalController");
 
-            }
-            else
-            {
-                // Obtener la cuenta bancaria que coincida con el código IBAN seleccionado
-                var cuentaSeleccionada = cuentasBancariasDTO.FirstOrDefault(c => c.CodigoIban == cuentaBancariaSelect);
+                UsuarioDTO u = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
+                List<CuentaBancariaDTO> cuentasBancariasDTO = _cuentaServicio.obtenerCuentasPorUsuarioId(u.IdUsuario);
 
-                if (cuentaSeleccionada != null)
+                if (cuentaBancariaSelect == null)
                 {
-                    ViewBag.CuentaSeleccionada = cuentaSeleccionada;
+                    ViewBag.CuentaSeleccionada = cuentasBancariasDTO[0];
                 }
                 else
                 {
-                    // Si no se encuentra una cuenta con el código IBAN seleccionado, puedes manejarlo de la manera que desees.
-                    // Por ejemplo, asignando la primera cuenta bancaria de la lista.
-                    ViewBag.CuentaSeleccionada = cuentasBancariasDTO.FirstOrDefault();
+                    var cuentaSeleccionada = cuentasBancariasDTO.FirstOrDefault(c => c.CodigoIban == cuentaBancariaSelect);
+
+                    if (cuentaSeleccionada != null)
+                    {
+                        ViewBag.CuentaSeleccionada = cuentaSeleccionada;
+                    }
+                    else
+                    {
+                        ViewBag.CuentaSeleccionada = cuentasBancariasDTO.FirstOrDefault();
+                    }
                 }
+
+                List<TransaccionDTO> transacciones = _convertirAdto.listaTransaccionToDto(_transaccionServicio.ObtenerTransaccionesDeUsuario(u.IdUsuario));
+                ViewBag.Transacciones = transacciones;
+                ViewBag.UsuarioDTO = u;
+                ViewBag.CuentasBancarias = cuentasBancariasDTO;
+
+                return View("~/Views/Home/home.cshtml");
             }
-
-            ViewBag.UsuarioDTO = u;
-            ViewBag.CuentasBancarias = cuentasBancariasDTO;
-            return View("~/Views/Home/home.cshtml");
-
+            catch (Exception e)
+            {
+                ViewData["error"] = "Error al cargar la página de inicio. Por favor, inténtelo de nuevo.";
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se produjo una excepción en el método Home() de la clase MenuPrincipalController: " + e.Message);
+                return View("~/Views/Home/home.cshtml");
+            }
         }
 
+        /// <summary>
+        /// Método para procesar el formulario de creación de cuenta bancaria.
+        /// </summary>
         [Authorize]
         [HttpPost]
         [Route("/auth/crear-cuenta-bancaria")]
@@ -65,17 +88,12 @@ namespace BancoFinalNetCore.Controllers
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método CuentaPost() de la clase MenuPrincipalController");
-                UsuarioDTO usuarioDto = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
 
+                UsuarioDTO usuarioDto = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
                 _cuentaServicio.GenerarCuentaBancaria(usuarioDto);
 
-                // Recuperar los datos necesarios para mantenerlos en ViewBag
                 List<CuentaBancariaDTO> cuentasBancariasDTO = _cuentaServicio.obtenerCuentasPorUsuarioId(usuarioDto.IdUsuario);
-
-                // Definir la cuenta seleccionada (puede ser la primera de la lista)
                 ViewBag.CuentaSeleccionada = cuentasBancariasDTO.FirstOrDefault();
-
-                // Asegurar que los datos necesarios estén en ViewBag antes de devolver la vista
                 ViewBag.UsuarioDTO = usuarioDto;
                 ViewBag.CuentasBancarias = cuentasBancariasDTO;
 
@@ -83,19 +101,13 @@ namespace BancoFinalNetCore.Controllers
             }
             catch (Exception e)
             {
-                // Manejar la excepción aquí si es necesario
-                // También puedes incluir mensajes de error en ViewBag si deseas mostrarlos en la vista
                 ViewBag.Error = "Error al procesar la solicitud. Por favor, inténtelo de nuevo.";
-                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método CuentaPost() de la clase MenuPrincipalController: " + e.Message + e.StackTrace);
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se produjo una excepción en el método CuentaPost() de la clase MenuPrincipalController: " + e.Message + e.StackTrace);
 
-                // Recuperar los datos necesarios para mantenerlos en ViewBag
                 UsuarioDTO u = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
                 List<CuentaBancariaDTO> cuentasBancariasDTO = _cuentaServicio.obtenerCuentasPorUsuarioId(u.IdUsuario);
 
-                // Definir la cuenta seleccionada (puede ser la primera de la lista)
                 ViewBag.CuentaSeleccionada = cuentasBancariasDTO.FirstOrDefault();
-
-                // Asegurar que los datos necesarios estén en ViewBag antes de devolver la vista
                 ViewBag.UsuarioDTO = u;
                 ViewBag.CuentasBancarias = cuentasBancariasDTO;
 

@@ -1,0 +1,30 @@
+﻿@using BancoFinalNetCore.DTO
+@model BancoFinalNetCore.DTO.CitaDTO
+
+@{
+    ViewData["Title"] = "NuevaCita";
+    List<OficinaDTO> citas = ViewBag.Oficinas;
+   
+}
+
+<form class="form" asp-action="CitaPost" asp-controller="Citas" enctype="multipart/form-data" method="post" asp-for="CitaDto">
+    <h2>Formulario de Transferencia</h2>
+    <div class="mb-3">
+        <label for="OficinaCitaId">Selecciona una cuenta Remitente:</label>
+        <select id="OficinaCitaId" name="OficinaCitaId">
+            @foreach (var cita in citas)
+            {
+                <option value="@cita.IdOficina">@cita.DireccionOficina</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="FechaCita">Fecha de la Cita:</label>
+        <input type="datetime-local" id="FechaCita" name="FechaCita" required>
+    </div>
+    <div class="mb-3">
+        <label for="MotivoCita">Motivo de la Cita:</label>
+        <input type="text" id="MotivoCita" name="MotivoCita" placeholder="Motivo" required>
+    </div>
+    <input type="submit" value="Pedir Cita">
+</form>

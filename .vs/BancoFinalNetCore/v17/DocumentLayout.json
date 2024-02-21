@@ -1,0 +1,1029 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\administracionusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\administracionusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\menuprincipalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\menuprincipalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\recuperarpasswordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\recuperarpasswordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\controllers\\transaccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\controllers\\transaccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\dto\\transacciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\dto\\transacciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\dto\\oficinadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\dto\\oficinadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\dto\\cuentabancariadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\dto\\cuentabancariadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\dto\\citadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\dto\\citadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\plantilla\\confirmarcorreo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\plantilla\\confirmarcorreo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\nuevatransaccion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\nuevatransaccion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\recuperar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\recuperar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\solicitarrecuperacionpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\solicitarrecuperacionpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\util\\escribirlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\util\\escribirlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\citaservicioimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\citaservicioimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\transaccionservicioimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\transaccionservicioimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\icitaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\icitaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\convertiradaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\convertiradaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\convertiradtoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\convertiradtoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\iconvertiradao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\iconvertiradao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\iconvertiradto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\iconvertiradto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\icuentaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\icuentaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\ioficinaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\ioficinaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\iservicioemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\iservicioemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\iservicioencriptar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\iservicioencriptar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\itransaccionservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\itransaccionservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\iusuarioservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\iusuarioservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\oficinaservicioimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\oficinaservicioimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\serviciocuentaimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\serviciocuentaimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\servicioemailimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\servicioemailimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\servicioencriptarimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\servicioencriptarimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\servicios\\usuarioservicioimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\servicios\\usuarioservicioimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\citas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\citas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\administracionusuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\administracionusuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\nuevacita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\nuevacita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\dal\\entidades\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|solutionrelative:dal\\entidades\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\nuevatransaccion.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\nuevatransaccion.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\miperfil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\miperfil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\citas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\citas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\dal\\entidades\\oficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|solutionrelative:dal\\entidades\\oficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\dal\\entidades\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|solutionrelative:dal\\entidades\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\miperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\dal\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|solutionrelative:dal\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\bancofinalnetcore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A4A92EF-8EAA-4B6A-BD83-C15E7EC52F63}|BancoFinalNetCore\\BancoFinalNetCore.csproj|solutionrelative:bancofinalnetcore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\dal\\entidades\\cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|solutionrelative:dal\\entidades\\cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\dal\\entidades\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|solutionrelative:dal\\entidades\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|c:\\users\\puesto17\\desktop\\bancofinalnetcore\\dal\\migrations\\20240220114825_migracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBEBAF5-A031-407F-BF4F-F5D85B6BA151}|DAL\\DAL.csproj|solutionrelative:dal\\migrations\\20240220114825_migracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwJsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T13:03:48.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CitasController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\CitasController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\CitasController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\CitasController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\CitasController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAcwF4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T10:11:56.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuPrincipalController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\MenuPrincipalController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\MenuPrincipalController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\MenuPrincipalController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\MenuPrincipalController.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAmwHUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdministracionUsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\AdministracionUsuariosController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\AdministracionUsuariosController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\AdministracionUsuariosController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\AdministracionUsuariosController.cs",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAvwFEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PerfilController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\PerfilController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\PerfilController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\PerfilController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\PerfilController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAcwGIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecuperarPasswordController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\RecuperarPasswordController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\RecuperarPasswordController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\RecuperarPasswordController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\RecuperarPasswordController.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T11:29:06.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegistroController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\RegistroController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\RegistroController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\RegistroController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\RegistroController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransaccionController.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\TransaccionController.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Controllers\\TransaccionController.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Controllers\\TransaccionController.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Controllers\\TransaccionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\DTO\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\UsuarioDTO.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\DTO\\UsuarioDTO.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAcwFkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TransaccionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\TransaccionDTO.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\DTO\\TransaccionDTO.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\TransaccionDTO.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\DTO\\TransaccionDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwCoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OficinaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\OficinaDTO.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\DTO\\OficinaDTO.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\OficinaDTO.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\DTO\\OficinaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CuentaBancariaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\CuentaBancariaDTO.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\DTO\\CuentaBancariaDTO.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\CuentaBancariaDTO.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\DTO\\CuentaBancariaDTO.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAcwCUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T11:06:36.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CitaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\CitaDTO.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\DTO\\CitaDTO.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\DTO\\CitaDTO.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\DTO\\CitaDTO.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAcwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T12:54:07.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ConfirmarCorreo.html",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Plantilla\\ConfirmarCorreo.html",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Plantilla\\ConfirmarCorreo.html",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Plantilla\\ConfirmarCorreo.html",
+              "RelativeToolTip": "BancoFinalNetCore\\Plantilla\\ConfirmarCorreo.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-02-21T12:54:03.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T12:53:47.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "recuperar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\recuperar.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\recuperar.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\recuperar.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\recuperar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T12:53:45.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "solicitarRecuperacionPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\solicitarRecuperacionPassword.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\solicitarRecuperacionPassword.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\solicitarRecuperacionPassword.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\solicitarRecuperacionPassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T12:53:43.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "nuevaTransaccion.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\nuevaTransaccion.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\nuevaTransaccion.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\nuevaTransaccion.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\nuevaTransaccion.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T08:18:20.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAADoAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T08:18:20.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CitaServicioImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\CitaServicioImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\CitaServicioImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\CitaServicioImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\CitaServicioImpl.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwEQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T11:12:46.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ICitaServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ICitaServicio.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\ICitaServicio.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ICitaServicio.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\ICitaServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T11:12:54.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ConvertirAdaoImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ConvertirAdaoImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\ConvertirAdaoImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ConvertirAdaoImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\ConvertirAdaoImpl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "registro.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\registro.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\registro.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\registro.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\registro.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T08:18:20.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TransaccionServicioImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\TransaccionServicioImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\TransaccionServicioImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\TransaccionServicioImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\TransaccionServicioImpl.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAowBIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EscribirLog.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Util\\EscribirLog.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Util\\EscribirLog.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Util\\EscribirLog.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Util\\EscribirLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwCQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ConvertirAdtoImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ConvertirAdtoImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\ConvertirAdtoImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ConvertirAdtoImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\ConvertirAdtoImpl.cs",
+              "ViewState": "AQIAAAkBAAAAAAAAAAAcwCcBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IConvertirAdao.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IConvertirAdao.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\IConvertirAdao.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IConvertirAdao.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\IConvertirAdao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IConvertirAdto.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IConvertirAdto.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\IConvertirAdto.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IConvertirAdto.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\IConvertirAdto.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAIwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ICuentaServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ICuentaServicio.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\ICuentaServicio.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ICuentaServicio.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\ICuentaServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IOficinaServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IOficinaServicio.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\IOficinaServicio.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IOficinaServicio.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\IOficinaServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T10:54:48.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IServicioEmail.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IServicioEmail.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\IServicioEmail.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IServicioEmail.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\IServicioEmail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IServicioEncriptar.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IServicioEncriptar.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\IServicioEncriptar.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IServicioEncriptar.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\IServicioEncriptar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ITransaccionServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ITransaccionServicio.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\ITransaccionServicio.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ITransaccionServicio.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\ITransaccionServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IUsuarioServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IUsuarioServicio.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\IUsuarioServicio.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\IUsuarioServicio.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\IUsuarioServicio.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T12:39:18.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ServicioCuentaImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ServicioCuentaImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\ServicioCuentaImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ServicioCuentaImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\ServicioCuentaImpl.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAcwLQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ServicioEmailImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ServicioEmailImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\ServicioEmailImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ServicioEmailImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\ServicioEmailImpl.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAowHkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ServicioEncriptarImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ServicioEncriptarImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\ServicioEncriptarImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\ServicioEncriptarImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\ServicioEncriptarImpl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UsuarioServicioImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\UsuarioServicioImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\UsuarioServicioImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\UsuarioServicioImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\UsuarioServicioImpl.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "OficinaServicioImpl.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\OficinaServicioImpl.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Servicios\\OficinaServicioImpl.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Servicios\\OficinaServicioImpl.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Servicios\\OficinaServicioImpl.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T10:54:38.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "home.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\home.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\home.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\home.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\home.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T08:18:20.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "citas.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\citas.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\citas.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\citas.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\citas.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T10:15:19.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "administracionUsuarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\administracionUsuarios.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\administracionUsuarios.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\administracionUsuarios.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\administracionUsuarios.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T08:18:20.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "nuevaCita.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\nuevaCita.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\nuevaCita.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\nuevaCita.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\nuevaCita.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T10:51:21.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\login.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\login.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\login.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\login.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAACcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T08:18:20.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Program.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Program.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Program.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAIAwwBsAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Cita.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\Cita.cs",
+              "RelativeDocumentMoniker": "DAL\\Entidades\\Cita.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\Cita.cs",
+              "RelativeToolTip": "DAL\\Entidades\\Cita.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T11:21:56.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "nuevaTransaccion.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\nuevaTransaccion.cshtml.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\nuevaTransaccion.cshtml.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\nuevaTransaccion.cshtml.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\nuevaTransaccion.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T10:50:41.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "miPerfil.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\miPerfil.cshtml.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\miPerfil.cshtml.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\miPerfil.cshtml.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\miPerfil.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T10:50:37.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "citas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\citas.cshtml.cs",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\citas.cshtml.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\citas.cshtml.cs",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\citas.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T10:18:07.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Oficina.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\Oficina.cs",
+              "RelativeDocumentMoniker": "DAL\\Entidades\\Oficina.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\Oficina.cs",
+              "RelativeToolTip": "DAL\\Entidades\\Oficina.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T09:55:24.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "BancoFinalNetCore\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-21T08:56:55.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "DAL\\Entidades\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\MyDbContext.cs",
+              "RelativeToolTip": "DAL\\Entidades\\MyDbContext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:42:03.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "miPerfil.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\miPerfil.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\miPerfil.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\miPerfil.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\miPerfil.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAACmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T08:18:20.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "DAL\\Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\Usuario.cs",
+              "RelativeToolTip": "DAL\\Entidades\\Usuario.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAA8wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BancoFinalNetCore\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\BancoFinalNetCore\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BancoFinalNetCore\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-21T08:18:20.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20240220114825_migracion.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Migrations\\20240220114825_migracion.cs",
+              "RelativeDocumentMoniker": "DAL\\Migrations\\20240220114825_migracion.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Migrations\\20240220114825_migracion.cs",
+              "RelativeToolTip": "DAL\\Migrations\\20240220114825_migracion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Transaccion.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\Transaccion.cs",
+              "RelativeDocumentMoniker": "DAL\\Entidades\\Transaccion.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\Transaccion.cs",
+              "RelativeToolTip": "DAL\\Entidades\\Transaccion.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwB0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "CuentaBancaria.cs",
+              "DocumentMoniker": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\CuentaBancaria.cs",
+              "RelativeDocumentMoniker": "DAL\\Entidades\\CuentaBancaria.cs",
+              "ToolTip": "C:\\Users\\Puesto17\\Desktop\\BancoFinalNetCore\\DAL\\Entidades\\CuentaBancaria.cs",
+              "RelativeToolTip": "DAL\\Entidades\\CuentaBancaria.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAvwBQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T08:18:20.674Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

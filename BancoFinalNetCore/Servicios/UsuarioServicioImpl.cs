@@ -469,6 +469,8 @@ namespace BancoFinalNetCore.Servicios
                 // Se busca un usuario en la base de datos por su correo electrónico, incluyendo sus cuentas bancarias relacionadas.
                 var usuario = _contexto.Usuarios
                         .Include(u => u.CuentasBancarias)
+                        .Include(u => u.CitasUsuario)
+                            .ThenInclude(c => c.OficinaCita)
                         .FirstOrDefault(u => u.EmailUsuario == email);
 
                 // Si se encontró un usuario...
