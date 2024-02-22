@@ -90,9 +90,9 @@ namespace BancoFinalNetCore.Controllers
                     EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método EliminarUsuario() de la clase AdministracionUsuariosController. " + ViewData["noTePuedesEliminar"]);
                     return View("~/Views/Home/administracionUsuarios.cshtml");
                 }
-                else if (User.IsInRole("ROLE_ADMIN") && adminsRestantes == 1 && usuario.Rol == "ROLE_ADMIN")
+                else if ( usuario.Rol == "ROLE_ADMIN")
                 {
-                    ViewData["noSePuedeEliminar"] = "No se puede eliminar al último administrador del sistema";
+                    ViewData["noSePuedeEliminar"] = "No se pueden eliminar a los admin";
                     ViewBag.Usuarios = usuarios;
                     EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método EliminarUsuario() de la clase AdministracionUsuariosController. " + ViewData["noSePuedeEliminar"]);
                     return View("~/Views/Home/administracionUsuarios.cshtml");

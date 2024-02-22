@@ -1,6 +1,6 @@
 ﻿@{
-    var CitaRealizada = ViewData["CitaRealizada"] as string;
-    var errorCita = ViewData["errorCita"] as string;
+    var CitaRealizada = TempData["CitaRealizada"] as string;
+    var errorCita = TempData["errorCita"] as string;
     var FechaAnterior = TempData["FechaAnterior"] as string; 
 
 }
@@ -15,15 +15,24 @@
         <table class="table table-striped table-bordered">
             <thead class="thead-inverse">
                 <tr>
+                    @if (User.IsInRole("ROLE_ADMIN"))
+                    {
+                        <th class="tableCustom">Id Usuario</th>
+                    }
                     <th class="tableCustom">Fecha Cita</th>
                     <th class="tableCustom">Oficina</th>
                     <th class="tableCustom">Motivo</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 @foreach (var cita in ViewBag.Citas)
                 {
                     <tr>
+                        @if (User.IsInRole("ROLE_ADMIN"))
+                        {
+                            <td>@cita.UsuarioCitaId</td>
+                        }
                         <td>@cita.FechaCita</td>
                         <td>@cita.OficinaDireccion</td>
                         <td>@cita.MotivoCita</td>
@@ -37,7 +46,7 @@
         <h5 class="card-title text-center text-danger">No hay usuarios registrados</h5>
     }
 </div>
-@if (!string.IsNullOrEmpty(CitaRealizada)) 
+@if (!string.IsNullOrEmpty(CitaRealizada))
 {
     <script>
         mostrarNotificacion("Cita Realizada", "La Cita se a realizado con exito", 'success');

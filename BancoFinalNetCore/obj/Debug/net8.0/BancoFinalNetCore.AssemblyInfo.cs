@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BancoFinalNetCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b74539e6275d919c9dee0637c34e0391e194778")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84b6f06ac406834a5d410a0916e9f63e4fa01e5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BancoFinalNetCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BancoFinalNetCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

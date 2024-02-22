@@ -13,5 +13,6 @@ namespace BancoFinalNetCore.Servicios
         /// <param name="citaDTO">DTO de la cita a registrar.</param>
         /// <returns>DTO de la cita registrada.</returns>
         public CitaDTO registrarCita(CitaDTO citaDTO);
+        public List<CitaDTO> obtenerTodosLasCitas();
     }
 }

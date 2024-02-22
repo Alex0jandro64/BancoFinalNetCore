@@ -92,26 +92,16 @@ namespace BancoFinalNetCore.Controllers
                 UsuarioDTO usuarioDto = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
                 _cuentaServicio.GenerarCuentaBancaria(usuarioDto);
 
-                List<CuentaBancariaDTO> cuentasBancariasDTO = _cuentaServicio.obtenerCuentasPorUsuarioId(usuarioDto.IdUsuario);
-                ViewBag.CuentaSeleccionada = cuentasBancariasDTO.FirstOrDefault();
-                ViewBag.UsuarioDTO = usuarioDto;
-                ViewBag.CuentasBancarias = cuentasBancariasDTO;
+                TempData["CuentaRealizada"] = "Transacción realizada con éxito";
 
-                return View("~/Views/Home/home.cshtml");
+                return RedirectToAction("Home", "MenuPrincipal");
             }
             catch (Exception e)
             {
-                ViewBag.Error = "Error al procesar la solicitud. Por favor, inténtelo de nuevo.";
+                TempData["CuentaNoRealizada"] = "Transacción realizada con error";
                 EscribirLog.escribirEnFicheroLog("[ERROR] Se produjo una excepción en el método CuentaPost() de la clase MenuPrincipalController: " + e.Message + e.StackTrace);
 
-                UsuarioDTO u = _usuarioServicio.obtenerUsuarioPorEmail(User.Identity.Name);
-                List<CuentaBancariaDTO> cuentasBancariasDTO = _cuentaServicio.obtenerCuentasPorUsuarioId(u.IdUsuario);
-
-                ViewBag.CuentaSeleccionada = cuentasBancariasDTO.FirstOrDefault();
-                ViewBag.UsuarioDTO = u;
-                ViewBag.CuentasBancarias = cuentasBancariasDTO;
-
-                return View("~/Views/Home/home.cshtml");
+                return RedirectToAction("Home", "MenuPrincipal");
             }
         }
     }

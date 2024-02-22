@@ -4,6 +4,8 @@
     ViewData["Title"] = "dashboard";
     var noAdmin = ViewData["noAdmin"] as string;
     var TransaccionRealizada = TempData["TransaccionRealizada"] as string;
+    var CuentaRealizada = TempData["CuentaRealizada"] as string;
+    var CuentaNoRealizada = TempData["CuentaNoRealizada"] as string;
     var noSePuedeEliminar = ViewData["noSePuedeEliminar"] as string;
     var error = ViewData["error"] as string;
     List<CuentaBancariaDTO> cuentas = ViewBag.CuentasBancarias;
@@ -102,6 +104,18 @@
     {
         <script>
             mostrarNotificacion("¡Recurso prohibido!", "No tiene los permisos suficientes para acceder a este recurso", 'error');
+        </script>
+    }
+    @if (!string.IsNullOrEmpty(CuentaRealizada))
+    {
+        <script>
+            mostrarNotificacion("¡Cuenta Creada Correctamente!", "Ya puede empezar a usar su cuenta", 'success');
+        </script>
+    }
+    @if (!string.IsNullOrEmpty(CuentaNoRealizada))
+    {
+        <script>
+            mostrarNotificacion("¡Error al crear la cuenta!", "A ocurrido un error mientras se creaba la cuenta, intentelo de nuevo mas tarde", 'error');
         </script>
     }
     @if (!string.IsNullOrEmpty(TransaccionRealizada))

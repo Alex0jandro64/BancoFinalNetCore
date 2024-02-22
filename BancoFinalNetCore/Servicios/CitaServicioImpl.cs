@@ -8,14 +8,16 @@ namespace BancoFinalNetCore.Servicios
     public class CitaServicioImpl : ICitaServicio
     {
         private readonly MyDbContext _contexto;
+        private readonly IConvertirAdto _convertirADto;
 
         /// <summary>
         /// Constructor de la clase CitaServicioImpl.
         /// </summary>
         /// <param name="contexto">El contexto de la base de datos.</param>
-        public CitaServicioImpl(MyDbContext contexto)
+        public CitaServicioImpl(MyDbContext contexto, IConvertirAdto convertirAdto)
         {
             _contexto = contexto;
+            _convertirADto = convertirAdto;
         }
 
         /// <summary>
@@ -65,5 +67,27 @@ namespace BancoFinalNetCore.Servicios
                 return null;
             }
         }
+
+        public List<CitaDTO> obtenerTodosLasCitas()
+        {
+            try
+            {
+                // Se escribe un mensaje de registro al entrar al método.
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase UsuarioServicioImpl");
+
+                // Se obtienen todos los usuarios de la base de datos y se convierten a objetos UsuarioDTO.
+                return _convertirADto.listaCitasToDto(_contexto.Citas.Include(u => u.OficinaCita).ToList());
+            }
+            catch (Exception e)
+            {
+                // Se atrapa cualquier excepción que pueda ocurrir durante la ejecución del método.
+                // Se escribe un mensaje de registro indicando el error.
+                EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - obtenerTodosLosUsuarios()] Error al obtener todos los usuarios: " + e.Message);
+
+                // Se retorna una lista vacía en caso de error.
+                return new List<CitaDTO>();
+            }
+        }
+
     }
 }

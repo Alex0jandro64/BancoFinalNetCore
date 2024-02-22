@@ -40,9 +40,18 @@ namespace BancoFinalNetCore.Controllers
                 // Obtener las citas del usuario
                 List<CitaDTO> citasDto = u.CitasUsuario;
 
-                // Pasar los datos a la vista
-                ViewBag.UsuarioDTO = u;
-                ViewBag.Citas = citasDto;
+                if (User.IsInRole("ROLE_ADMIN"))
+                {
+                    // Pasar los datos a la vista
+                    ViewBag.Citas = _citaServicio.obtenerTodosLasCitas();
+                }
+                else
+                {
+                    // Pasar los datos a la vista
+                    ViewBag.Citas = citasDto;
+                }
+                    ViewBag.UsuarioDTO = u;
+
 
                 // Retornar la vista de citas
                 return View("~/Views/Home/citas.cshtml");
